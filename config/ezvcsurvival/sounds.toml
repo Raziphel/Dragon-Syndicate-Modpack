@@ -16,7 +16,7 @@
 	#Value between 0 and 1. A lower value will reduce the effective sound range.
 	# Default: 0.8
 	# Range: 0.0 ~ 1.0
-	thunder_range_multiplier = 0.8
+	thunder_range_multiplier = 0.5
 
 #PointBlank gun type modifiers configuration
 #Define multipliers for pointblank reaction adjustments by gun type.

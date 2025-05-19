@@ -19,6 +19,6 @@ excludedRecipes = []
 #If true, a cow can be squished into a Milk Jar by dropping an anvil on top.
 cowJarEnabled = true
 #Enabling this will make the kitchen counters have twice as much inventory space.
-largeCounters = false
+largeCounters = true
 #The fuel multiplier for the cooking oven. Higher values means fuel lasts longer, 1.0 is furnace default.
 ovenFuelTimeMultiplier = 0.33000001311302185

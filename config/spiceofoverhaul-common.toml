@@ -27,7 +27,7 @@ lowHealthStrikes = true
 #Strikes for having low hp start at this health level
 # Default: 0.25
 # Range: 0.05000000074505806 ~ 1.0
-healthLevel = 0.25
+healthLevel = 0.20
 #Strikes for having low hunger
 lowHungerStrikes = true
 #Strikes for having low hunger start at this hunger level
@@ -35,7 +35,7 @@ lowHungerStrikes = true
 # Range: 1 ~ 20
 hungerLevel = 5
 #Strikes for having high saturation
-highSaturationStrikes = true
+highSaturationStrikes = false
 #Strikes for having high saturation start at this saturation level
 # Default: 15.0
 # Range: 0.0 ~ 20.0

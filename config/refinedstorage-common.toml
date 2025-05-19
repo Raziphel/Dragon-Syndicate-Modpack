@@ -1,10 +1,10 @@
 #Allowed Values: STRETCH, SMALL, MEDIUM, LARGE, EXTRA_LARGE
-screenSize = "STRETCH"
+screenSize = "EXTRA_LARGE"
 smoothScrolling = true
 # Default: 256
 # Range: 3 ~ 256
 maxRowsStretch = 256
-searchBoxAutoSelected = false
+searchBoxAutoSelected = true
 autocraftingNotification = true
 
 [cable]
@@ -37,7 +37,7 @@ autocraftingNotification = true
 	largeFont = false
 	preventSortingWhileShiftIsDown = true
 	detailedTooltip = true
-	rememberSearchQuery = false
+	rememberSearchQuery = true
 	# Default: 10
 	# Range: 0 ~ 9223372036854775807
 	energyUsage = 10

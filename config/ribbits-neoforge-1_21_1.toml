@@ -5,4 +5,4 @@
 		# If enabled, Pride Ribbits will exist all year instead of only in June.
 		# Default: false
 		#
-		"Show Pride Flags All Year" = false
+		"Show Pride Flags All Year" = true

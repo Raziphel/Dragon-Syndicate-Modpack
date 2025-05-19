@@ -8,7 +8,7 @@ showTextOverlay = true
 # Range: 1 ~ 32
 manualGuiScale = 4
 #Set this to true if you suffer from bad eyesight. The Engineer's manual will be switched to a bold and darker text to improve readability.
-badEyesight = false
+badEyesight = true
 #Set this to false to change fluid recipes in the manual to use decimals on buckets instead of fractions
 fluidFractions = true
 #Controls if item tooltips should contain the tags names of items. These tooltips are only visible in advanced tooltip mode (F3+H)

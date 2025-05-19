@@ -1,6 +1,6 @@
 {
 	"canAttack": true,
-	"health": 10.0,
+	"health": 50.0,
 	"movementSpeed": 0.3,
 	"flyingSpeed": 0.5,
 	"followRange": 64.0,

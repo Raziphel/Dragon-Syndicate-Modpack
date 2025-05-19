@@ -4,8 +4,8 @@
       "The default amount of time for a tip to be displayed before it cycles to the    ",
       "next tip.                                                                       "
     ],
-    "//default": 5000,
-    "value": 5000
+    "//default": 6000,
+    "value": 6000
   },
   "ignored_namespaces": {
     "//": "Tips from an ignored namespace will not be displayed in game.",
