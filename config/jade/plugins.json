@@ -51,6 +51,17 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "immersiveengineering": {
+    "multiblock_icon": true
+  },
+  "delightful": {
+    "crop_progress": true,
+    "pie_icons": true,
+    "mushroom_colony": true
+  },
+  "twilightforest": {
+    "quest_ram_wool": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -59,8 +70,25 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "apotheosis": {
+    "adventure": true,
+    "ench": true,
+    "spawner": true
+  },
   "waystones": {
     "waystone": true
+  },
+  "refinedcooking": {
+    "kitchen_access_point": true,
+    "kitchen_station": true
+  },
+  "cookingforblockheads": {
+    "fridge": true,
+    "oven": true,
+    "sink": true,
+    "preservation_chamber": true,
+    "milk_jar": true,
+    "toaster": true
   },
   "balm": {
     "jade": true
