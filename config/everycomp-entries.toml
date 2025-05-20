@@ -1,5 +1,8 @@
+
 #Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
 [types]
+
+	[types.stone_type]
 
 		[types.stone_type.biomeswevegone]
 			white_sandstone = true
@@ -13,39 +16,24 @@
 			mossy_stone = true
 			rocky_stone = true
 
-		[types.stone_type.create]
-			limestone = true
-			asurine = true
-			crimsite = true
-			ochrum = true
-			veridium = true
-			scoria = true
-			scorchia = true
+		[types.stone_type.spelunkery]
+			nephrite = true
 
-		[types.stone_type.iceandfire]
-			dread_stone = true
+	[types.wood_type]
 
-		[types.stone_type.create_d2d]
-			cut_stone = true
-
-		[types.mud_type.biomeswevegone]
-			pale_mud = true
-
-		[types.wood_type.mynethersdelight]
-			powdery = true
-
-		[types.wood_type.iceandfire]
-			dreadwood = true
-
-		[types.wood_type.twilightforest]
-			twilight_oak = true
-			canopy = true
-			mangrove = true
-			dark = true
-			time = true
-			transformation = true
-			mining = true
-			sorting = true
+		[types.wood_type.would]
+			willow = true
+			baobab = true
+			ebony = true
+			fir = true
+			pine = true
+			cedar = true
+			mahogany = true
+			azalea = true
+			palm = true
+			maple = true
+			aspen = true
+			walnut = true
 
 		[types.wood_type.biomeswevegone]
 			aspen = true
@@ -68,27 +56,12 @@
 			redwood = true
 			sakura = true
 			skyris = true
-			spirit = true
 			white_mangrove = true
 			willow = true
 			witch_hazel = true
 			zelkova = true
 
-		[types.wood_type.expandeddelight]
-			cinnamon = true
-
-		[types.leaves_type.twilightforest]
-			beanstalk = true
-			thorn = true
-			twilight_oak = true
-			canopy = true
-			mangrove = true
-			dark = true
-			rainbow_oak = true
-			time = true
-			transformation = true
-			mining = true
-			sorting = true
+	[types.leaves_type]
 
 		[types.leaves_type.chipped]
 			apple_acacia = true
@@ -158,15 +131,18 @@
 			golden_apple_oak = true
 			golden_apple_spruce = true
 
-		[types.leaves_type.iceandfire]
-			dreadwood = true
-
-		[types.leaves_type.luminousworld]
+		[types.leaves_type.would]
+			willow = true
+			baobab = true
+			ebony = true
+			fir = true
+			pine = true
+			cedar = true
+			mahogany = true
 			palm = true
-			yellow_birch = true
-
-		[types.leaves_type.twilightdelight]
-			ironwood = true
+			maple = true
+			aspen = true
+			walnut = true
 
 		[types.leaves_type.biomeswevegone]
 			aspen = true
@@ -219,8 +195,6 @@
 			red_oak = true
 			red_spruce = true
 			silver_maple = true
-			spirit = true
-			flowering_spirit = true
 			green_apple_skyris = true
 			flowering_skyris = true
 			flowering_ironwood = true
@@ -230,11 +204,10 @@
 			yellow_spruce = true
 			firecracker = true
 
-		[types.leaves_type.expandeddelight]
-			cinnamon = true
-
 #Disables specific entries
 [entries]
+
+	[entries.stone_type]
 
 		[entries.stone_type.chipped]
 			pillar = true
@@ -305,26 +278,6 @@
 			tiny_bricks = true
 			carved = true
 
-		[entries.stone_type.create]
-			cut_wall = true
-			cut_brick_slab = true
-			polished_cut_slab = true
-			small_brick_wall = true
-			cut = true
-			cut_stairs = true
-			small_brick_stairs = true
-			cut_bricks = true
-			small_bricks = true
-			layered = true
-			cut_brick_wall = true
-			pillar = true
-			cut_brick_stairs = true
-			polished_cut_wall = true
-			cut_slab = true
-			polished_cut = true
-			small_brick_slab = true
-			polished_cut_stairs = true
-
 		[entries.stone_type.rechiseled]
 			brick_pattern = true
 			waves_connecting = true
@@ -361,6 +314,8 @@
 			smooth_tiles_connecting = true
 			smooth_tiles = true
 			small_tiles = true
+
+	[entries.wood_type]
 
 		[entries.wood_type.chipped]
 			fine_planks = true
@@ -499,40 +454,3 @@
 			golden_barred_trapdoor = true
 			nailed_log = true
 
-		[entries.wood_type.refurbished_furniture]
-			storage_cabinet = true
-			storage_jar = true
-			desk = true
-			cutting_board = true
-			drawer = true
-			kitchen_sink = true
-			toilet = true
-			lattice_fence = true
-			basin = true
-			kitchen_drawer = true
-			kitchen_cabinetry = true
-			crate = true
-			chair = true
-			light_ceiling_fan = true
-			table = true
-			mail_box = true
-			dark_ceiling_fan = true
-			lattice_fence_gate = true
-			bath = true
-			kitchen_storage_cabinet = true
-
-		[entries.wood_type.twilightforest]
-			banister = true
-			hollow_log_climbable = true
-			hollow_log_horizontal = true
-			hollow_log_vertical = true
-
-		[entries.wood_type.farmersdelight]
-			cabinet = true
-
-		[entries.wood_type.create]
-			window_pane = true
-			window = true
-
-		[entries.leaves_type.refurbished_furniture]
-			hedge = true

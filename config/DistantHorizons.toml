@@ -120,7 +120,7 @@ _version = 3
 		# Expected Compression Ratio: 0.14
 		# Estimated average DTO read speed: 11.89 ms
 		# Estimated average DTO write speed: 192.01 ms
-		dataCompression = "LZ4"
+		dataCompression = "LZMA2"
 		#
 		# Enabling this will drastically increase chunk processing time
 		# and you may need to increase your CPU load to handle it.
@@ -244,7 +244,7 @@ _version = 3
 		# but may cause server/simulation lag. 
 		# Note: unlike other modes this option DOES save generated chunks to 
 		# Minecraft's region files.
-		distantGeneratorMode = "PRE_EXISTING_ONLY"
+		distantGeneratorMode = "FEATURES"
 		#
 		# How should distant generator progress be displayed? 
 		# 
@@ -624,7 +624,7 @@ _version = 3
 				blocksToIgnore = "NON_COLLIDING"
 				#
 				# The radius of the mod's render distance. (measured in chunks)
-				lodChunkRenderDistanceRadius = 256
+				lodChunkRenderDistanceRadius = 1024
 				#
 				# What the value should vanilla Minecraft's texture LodBias be? 
 				# If set to 0 the mod wont overwrite vanilla's default (which so happens to also be 0)

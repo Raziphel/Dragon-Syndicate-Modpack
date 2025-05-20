@@ -28,3 +28,5 @@ _*
 /usercache.json
 /usernamecache.json
 .curseclient
+/.vscode
+/modernfix
