@@ -30,3 +30,5 @@ _*
 .curseclient
 /.vscode
 /modernfix
+/backups
+/rhino.local.properties
