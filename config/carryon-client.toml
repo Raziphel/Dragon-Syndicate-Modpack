@@ -4,7 +4,4 @@ facePlayer = false
 renderArms = true
 #Model Overrides based on NBT or Meta. Advanced users only! Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Model-Override-Config
 modelOverrides = ["minecraft:redstone_wire->(item)minecraft:redstone", "minecraft:bamboo_sapling->(block)minecraft:bamboo", "minecraft:candle_cake->(block)minecraft:cake"]
-<<<<<<< HEAD
 
-=======
->>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

@@ -22,28 +22,6 @@
         "value": 512
       }
     },
-    "legendarysurvivaloverhaul:thermal_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
-    "attributeslib:ghost_health": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
     "confluence:crit_chance": {
       "enabled": false,
       "min": {
@@ -64,50 +42,6 @@
       "max": {
         "default": 2048,
         "value": 2048
-      }
-    },
-    "attributeslib:prot_shred": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "attributeslib:overheal": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "attributeslib:armor_shred": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2,
-        "value": 2
-      }
-    },
-    "attributeslib:healing_received": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
       }
     },
     "forge:entity_gravity": {
@@ -132,17 +66,6 @@
         "value": Infinity
       }
     },
-    "attributeslib:armor_pierce": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
     "cold_sweat:heat_resistance": {
       "enabled": false,
       "min": {
@@ -165,39 +88,6 @@
         "value": 1
       }
     },
-    "additional_attributes:respiration": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "attributeslib:cold_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
-    "attributeslib:experience_gained": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
     "minecraft:generic.luck": {
       "enabled": true,
       "min": {
@@ -207,17 +97,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "additional_attributes:apothic_crafting": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     },
     "stardew_fishing:exp_multiplier": {
@@ -319,17 +198,6 @@
         "value": 142
       }
     },
-    "additional_attributes:harvest": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "combatroll:recharge": {
       "enabled": false,
       "min": {
@@ -341,33 +209,11 @@
         "value": 200
       }
     },
-    "additional_attributes:fishing_luck": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "cold_sweat:heat_dampening": {
       "enabled": false,
       "min": {
         "default": -Infinity,
         "value": -Infinity
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "attributeslib:dodge_chance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
       },
       "max": {
         "default": 1,
@@ -407,17 +253,6 @@
         "value": 10000
       }
     },
-    "attributeslib:fire_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
     "minecraft:generic.attack_knockback": {
       "enabled": true,
       "min": {
@@ -427,17 +262,6 @@
       "max": {
         "default": 5,
         "value": 1000000
-      }
-    },
-    "attributeslib:crit_chance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     },
     "cold_sweat:freezing_point": {
@@ -480,30 +304,8 @@
         "value": 0
       },
       "max": {
-        "default": 100,
+        "default": 20,
         "value": 1000000
-      }
-    },
-    "legendarysurvivaloverhaul:heating_temperature": {
-      "enabled": false,
-      "min": {
-        "default": -10000,
-        "value": -10000
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
-    "attributeslib:crit_damage": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "confluence:magic_damage": {
@@ -572,28 +374,6 @@
         "value": 1000000
       }
     },
-    "attributeslib:draw_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 4,
-        "value": 4
-      }
-    },
-    "legendarysurvivaloverhaul:broken_heart_resilience": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
     "confluence:dodge_chance": {
       "enabled": false,
       "min": {
@@ -603,17 +383,6 @@
       "max": {
         "default": 1,
         "value": 1
-      }
-    },
-    "legendarysurvivaloverhaul:cold_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
       }
     },
     "divine_weaponry:erebus_flight": {
@@ -638,17 +407,6 @@
         "value": 90
       }
     },
-    "legendarysurvivaloverhaul:heat_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
     "cold_sweat:world_temperature": {
       "enabled": false,
       "min": {
@@ -667,41 +425,8 @@
         "value": 0
       },
       "max": {
-        "default": 200,
+        "default": 30,
         "value": 1000000
-      }
-    },
-    "legendarysurvivaloverhaul:cooling_temperature": {
-      "enabled": false,
-      "min": {
-        "default": -10000,
-        "value": -10000
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
-    "attributeslib:prot_pierce": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 34,
-        "value": 34
-      }
-    },
-    "additional_attributes:fishing_lure": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
       }
     },
     "minecraft:generic.flying_speed": {
@@ -715,17 +440,6 @@
         "value": 1024
       }
     },
-    "attributeslib:current_hp_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "divine_weaponry:erebus_wither_direction": {
       "enabled": false,
       "min": {
@@ -735,28 +449,6 @@
       "max": {
         "default": 2,
         "value": 2
-      }
-    },
-    "additional_attributes:looting": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "attributeslib:mining_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     },
     "minecraft:generic.movement_speed": {
@@ -814,17 +506,6 @@
         "value": 90
       }
     },
-    "legendarysurvivaloverhaul:permanent_heart": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
-      }
-    },
     "combatroll:count": {
       "enabled": false,
       "min": {
@@ -834,17 +515,6 @@
       "max": {
         "default": 20,
         "value": 20
-      }
-    },
-    "legendarysurvivaloverhaul:broken_heart": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10000,
-        "value": 10000
       }
     },
     "skilltree:stealth": {
@@ -869,17 +539,6 @@
         "value": 1
       }
     },
-    "attributeslib:arrow_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "minecraft:horse.jump_strength": {
       "enabled": true,
       "min": {
@@ -891,17 +550,6 @@
         "value": 2
       }
     },
-    "attributeslib:arrow_velocity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "minecraft:generic.knockback_resistance": {
       "enabled": true,
       "min": {
@@ -911,17 +559,6 @@
       "max": {
         "default": 1,
         "value": 1
-      }
-    },
-    "attributeslib:life_steal": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     }
   }

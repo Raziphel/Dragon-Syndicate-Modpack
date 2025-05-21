@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 #Entity Settings
 [entity]
 
@@ -123,7 +120,4 @@
 		remove_stroll = false
 		#Remove the sheep's eat block AI task. This causes sheep to no longer eat grass, and thus be unable to regenerate their wool.
 		remove_eat_block = false
-<<<<<<< HEAD
 
-=======
->>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

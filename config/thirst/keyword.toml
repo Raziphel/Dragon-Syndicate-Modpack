@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 ["Keyword config"]
 	#This config allows for faster implementation of new thirst quenching items. It works by defining
 	#lists of regular expressions to select items by their id name. It divides the items into categories
@@ -42,7 +39,4 @@
 			#List of keywords for fruits
 			#Format: [(keyword1|keyword2|keyword3)]
 			keyword_fruit = "(?:\\b|[^a-zA-Z])(fruit|berry|berries|grape|orange|peach|pear|coconut|lemon|melon|cherry|apple)(?:\\b|[^a-zA-Z])"
-<<<<<<< HEAD
 
-=======
->>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

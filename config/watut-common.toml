@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 #General mod settings
 [general]
 	#-
 	announceIdleStatesInChat = false
 	#Default 5 minutes
-<<<<<<< HEAD
 	#Range: > -2147483648
 	ticksToMarkPlayerIdle = 6000
 
-=======
-	# Default: 6000
-	# Range: > -2147483648
-	ticksToMarkPlayerIdle = 6000
->>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

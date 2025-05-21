@@ -1,14 +1,5 @@
-<<<<<<< HEAD
 #set to true to use vanilla textures instead of Lootr special textures. Note: this will prevent previously opened chests from rendering differently
 vanilla_textures = false
 #set to true to use the old Lootr textures
 old_textures = false
 
-=======
-[textures]
-	#configuration options for textures
-	#set to true to use vanilla textures instead of Lootr special textures. Note: this will prevent previously opened chests from rendering differently
-	vanilla_textures = false
-	#set to true to use the new Lootr textures
-	new_textures = true
->>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
