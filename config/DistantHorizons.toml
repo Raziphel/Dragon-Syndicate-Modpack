@@ -244,7 +244,7 @@ _version = 3
 		# but may cause server/simulation lag. 
 		# Note: unlike other modes this option DOES save generated chunks to 
 		# Minecraft's region files.
-		distantGeneratorMode = "FEATURES"
+		distantGeneratorMode = "INTERNAL_SERVER"
 		#
 		# How should distant generator progress be displayed? 
 		# 
@@ -448,7 +448,7 @@ _version = 3
 				# Holes are most likely to appear when flying through unloaded terrain. 
 				# 
 				# Increasing the vanilla render distance increases the effectiveness of this setting.
-				overdrawPrevention = "0.0"
+				overdrawPrevention = "0.5"
 				#
 				# If enabled caves won't be rendered. 
 				# 
@@ -463,7 +463,7 @@ _version = 3
 				# and the shadow pass is being rendered.
 				# 
 				# Disable this if shadows render incorrectly.
-				disableShadowPassFrustumCulling = false
+				disableShadowPassFrustumCulling = true
 				#
 				# At what Y value should cave culling start? 
 				# Lower this value if you get walls for areas with 0 light.
@@ -624,7 +624,7 @@ _version = 3
 				blocksToIgnore = "NON_COLLIDING"
 				#
 				# The radius of the mod's render distance. (measured in chunks)
-				lodChunkRenderDistanceRadius = 1024
+				lodChunkRenderDistanceRadius = 4000
 				#
 				# What the value should vanilla Minecraft's texture LodBias be? 
 				# If set to 0 the mod wont overwrite vanilla's default (which so happens to also be 0)

@@ -144,6 +144,11 @@
 		[types.leaves_type.twilightdelight]
 			ironwood = true
 
+	[types.cake]
+
+		[types.cake.farmersrespite]
+			coffee_cake = true
+
 #Disables specific entries
 [entries]
 
@@ -274,6 +279,97 @@
 			polished_cut = true
 			small_brick_slab = true
 			polished_cut_stairs = true
+
+		[entries.stone_type.mcwpaths]
+			running_bond = true
+			mossy_running_bond = true
+			windmill_weave_slab = true
+			mossy_strewn_rocky_path = true
+			mossy_running_bond_path = true
+			running_bond_path = true
+			crystal_floor_path = true
+			strewn_rocky_path = true
+			mossy_flagstone_slab = true
+			running_bond_slab = true
+			mossy_flagstone_path = true
+			mossy_running_bond_slab = true
+			flagstone = true
+			crystal_floor_slab = true
+			mossy_crystal_floor = true
+			mossy_windmill_weave_slab = true
+			mossy_windmill_weave_path = true
+			mossy_windmill_weave = true
+			mossy_crystal_floor_path = true
+			flagstone_slab = true
+			crystal_floor = true
+			mossy_flagstone = true
+			mossy_crystal_floor_slab = true
+			flagstone_path = true
+			windmill_weave = true
+			windmill_weave_path = true
+
+		[entries.stone_type.mcwstairs]
+			mossy_brick_railing = true
+			mossy_brick_balcony = true
+			brick_terrace_stairs = true
+			mossy_brick_loft_stairs = true
+			mossy_brick_platform = true
+			brick_railing = true
+			brick_compact_stairs = true
+			brick_balcony = true
+			brick_platform = true
+			mossy_brick_skyline_stairs = true
+			mossy_brick_compact_stairs = true
+			mossy_brick_bulk_stairs = true
+			brick_skyline_stairs = true
+			brick_bulk_stairs = true
+			brick_loft_stairs = true
+			mossy_brick_terrace_stairs = true
+
+		[entries.stone_type.mcwbridges]
+			mossy_bridge_pier = true
+			bridge_pier = true
+			mossy_bridge_stair = true
+			balustrade_mossy_bricks_bridge = true
+			bridge = true
+			balustrade_bricks_bridge = true
+			mossy_brick_bridge = true
+			brick_bridge_stair = true
+			brick_bridge = true
+
+		[entries.stone_type.mcwfences]
+			modern_brick_wall = true
+			railing_gate = true
+			grass_topped_wall = true
+			railing_wall = true
+			railing_brick_wall = true
+			pillar_wall = true
+			modern_wall = true
+			brick_railing_gate = true
+
+		[entries.stone_type.mcwwindows]
+			window2 = true
+			brick_gothic = true
+			pane_window = true
+			brick_arrow_slit = true
+			four_window = true
+			window = true
+
+		[entries.stone_type.mcwroofs]
+			top_roof = true
+			lower_roof = true
+			steep_roof = true
+			bricks_steep_roof = true
+			bricks_roof = true
+			bricks_top_roof = true
+			upper_steep_roof = true
+			upper_lower_roof = true
+			attic_roof = true
+			bricks_attic_roof = true
+			roof = true
+			bricks_lower_roof = true
+			bricks_upper_steep_roof = true
+			bricks_upper_lower_roof = true
 
 	[entries.wood_type]
 
@@ -426,4 +522,227 @@
 			hollow_log_climbable = true
 			hollow_log_horizontal = true
 			hollow_log_vertical = true
+
+		[entries.wood_type.mcwfurnitures]
+			stripped_glass_table = true
+			end_table = true
+			stool_chair = true
+			stripped_drawer_counter = true
+			stripped_counter = true
+			covered_desk = true
+			stripped_modern_wardrobe = true
+			stripped_covered_desk = true
+			stripped_cupboard_counter = true
+			stripped_triple_drawer = true
+			stripped_chair = true
+			stripped_modern_desk = true
+			stripped_bookshelf_cupboard = true
+			modern_wardrobe = true
+			striped_chair = true
+			stripped_large_drawer = true
+			wardrobe = true
+			modern_desk = true
+			stripped_end_table = true
+			drawer = true
+			chair = true
+			stripped_table = true
+			double_drawer_counter = true
+			drawer_counter = true
+			counter = true
+			table = true
+			stripped_double_drawer = true
+			lower_triple_drawer = true
+			bookshelf = true
+			stripped_wardrobe = true
+			large_drawer = true
+			stripped_desk = true
+			stripped_lower_triple_drawer = true
+			bookshelf_drawer = true
+			double_drawer = true
+			stripped_coffee_table = true
+			stripped_striped_chair = true
+			stripped_stool_chair = true
+			cupboard_counter = true
+			coffee_table = true
+			glass_table = true
+			stripped_double_drawer_counter = true
+			lower_bookshelf_drawer = true
+			stripped_lower_bookshelf_drawer = true
+			stripped_bookshelf_drawer = true
+			stripped_bookshelf = true
+			modern_chair = true
+			stripped_modern_chair = true
+			bookshelf_cupboard = true
+			desk = true
+			stripped_double_wardrobe = true
+			triple_drawer = true
+			double_wardrobe = true
+			stripped_drawer = true
+
+		[entries.wood_type.mcwdoors]
+			japanese2_door = true
+			tropical_door = true
+			barn_glass_door = true
+			four_panel_door = true
+			waffle_door = true
+			cottage_door = true
+			swamp_door = true
+			barn_door = true
+			classic_door = true
+			beach_door = true
+			japanese_door = true
+			stable_door = true
+			modern_door = true
+			nether_door = true
+			stable_head_door = true
+			western_door = true
+			paper_door = true
+			bamboo_door = true
+			glass_door = true
+			mystic_door = true
+			bark_glass_door = true
+
+		[entries.wood_type.buildersdelight]
+			chair_2 = true
+			chair_1 = true
+			slab_5 = true
+			slab_4 = true
+			slab_7 = true
+			slab_6 = true
+			slab_1 = true
+			slab_3 = true
+			slab_2 = true
+			planks_3 = true
+			planks_4 = true
+			planks_1 = true
+			planks_2 = true
+			planks_7 = true
+			planks_5 = true
+			planks_6 = true
+			glass_8 = true
+			glass_2 = true
+			glass_3 = true
+			glass_1 = true
+			glass_6 = true
+			glass_7 = true
+			glass_4 = true
+			glass_5 = true
+			furniture_kit = true
+			stairs_4 = true
+			stairs_5 = true
+			stairs_6 = true
+			stairs_7 = true
+			stairs_1 = true
+			stairs_2 = true
+			frame_7 = true
+			stairs_3 = true
+			frame_8 = true
+			frame_5 = true
+			frame_6 = true
+			frame_3 = true
+			frame_4 = true
+			frame_1 = true
+			frame_2 = true
+			table_1 = true
+			table_2 = true
+			glass_pane_7 = true
+			glass_pane_8 = true
+			glass_pane_5 = true
+			glass_pane_6 = true
+			glass_pane_3 = true
+			glass_pane_4 = true
+			glass_pane_1 = true
+			glass_pane_2 = true
+
+		[entries.wood_type.mcwbridges]
+			bridge_pier = true
+			rope_bridge = true
+			log_bridge_middle = true
+			log_bridge_stair = true
+			rope_bridge_stair = true
+			rail_bridge = true
+
+		[entries.wood_type.mcwtrpdoors]
+			swamp_trapdoor = true
+			cottage_trapdoor = true
+			classic_trapdoor = true
+			bamboo_trapdoor = true
+			barn_trapdoor = true
+			four_panel_trapdoor = true
+			barred_trapdoor = true
+			ranch_trapdoor = true
+			beach_trapdoor = true
+			glass_trapdoor = true
+			blossom_trapdoor = true
+			tropical_trapdoor = true
+			paper_trapdoor = true
+			bark_trapdoor = true
+			mystic_trapdoor = true
+			barrel_trapdoor = true
+
+		[entries.wood_type.mcwstairs]
+			terrace_stairs = true
+			balcony = true
+			loft_stairs = true
+			railing = true
+			skyline_stairs = true
+			compact_stairs = true
+			platform = true
+			bulk_stairs = true
+
+		[entries.wood_type.mcwpaths]
+			planks_path = true
+
+		[entries.wood_type.mcwwindows]
+			plank_four_window = true
+			window2 = true
+			stripped_log_window = true
+			plank_window2 = true
+			louvered_shutter = true
+			plank_pane_window = true
+			stripped_log_window2 = true
+			log_parapet = true
+			stripped_log_four_window = true
+			plank_window = true
+			pane_window = true
+			stripped_pane_window = true
+			four_window = true
+			plank_parapet = true
+			blinds = true
+			window = true
+			shutter = true
+
+		[entries.wood_type.mcwfences]
+			picket_fence = true
+			wired_fence = true
+			pyramid_gate = true
+			highley_gate = true
+			stockade_fence = true
+			horse_fence = true
+
+		[entries.wood_type.mcwlights]
+			soul_tiki_torch = true
+			ceiling_fan_light = true
+			tiki_torch = true
+
+		[entries.wood_type.mcwroofs]
+			top_roof = true
+			lower_roof = true
+			planks_roof = true
+			steep_roof = true
+			planks_top_roof = true
+			planks_upper_steep_roof = true
+			upper_steep_roof = true
+			upper_lower_roof = true
+			attic_roof = true
+			planks_upper_lower_roof = true
+			roof = true
+			planks_attic_roof = true
+			planks_steep_roof = true
+			planks_lower_roof = true
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.mcwfences]
+			hedge = true
 

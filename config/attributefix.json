@@ -121,6 +121,17 @@
         "value": 8
       }
     },
+    "cold_sweat:base_temperature": {
+      "enabled": false,
+      "min": {
+        "default": NaN,
+        "value": NaN
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
     "attributeslib:armor_pierce": {
       "enabled": false,
       "min": {
@@ -130,6 +141,39 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "cold_sweat:heat_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "stardew_fishing:line_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "additional_attributes:respiration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "attributeslib:cold_damage": {
@@ -163,6 +207,28 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "additional_attributes:apothic_crafting": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "stardew_fishing:exp_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "confluence:mining_speed": {
@@ -220,6 +286,17 @@
         "value": 64
       }
     },
+    "cold_sweat:cold_dampening": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "combatroll:distance": {
       "enabled": false,
       "min": {
@@ -231,6 +308,28 @@
         "value": 24
       }
     },
+    "stardew_fishing:bar_size": {
+      "enabled": false,
+      "min": {
+        "default": 4,
+        "value": 4
+      },
+      "max": {
+        "default": 142,
+        "value": 142
+      }
+    },
+    "additional_attributes:harvest": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "combatroll:recharge": {
       "enabled": false,
       "min": {
@@ -240,6 +339,28 @@
       "max": {
         "default": 200,
         "value": 200
+      }
+    },
+    "additional_attributes:fishing_luck": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "cold_sweat:heat_dampening": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "attributeslib:dodge_chance": {
@@ -317,6 +438,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "cold_sweat:freezing_point": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "forge:swim_speed": {
@@ -517,6 +649,17 @@
         "value": 10000
       }
     },
+    "cold_sweat:world_temperature": {
+      "enabled": false,
+      "min": {
+        "default": NaN,
+        "value": NaN
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
     "minecraft:generic.armor": {
       "enabled": true,
       "min": {
@@ -548,6 +691,17 @@
       "max": {
         "default": 34,
         "value": 34
+      }
+    },
+    "additional_attributes:fishing_lure": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "minecraft:generic.flying_speed": {
@@ -583,6 +737,17 @@
         "value": 2
       }
     },
+    "additional_attributes:looting": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:mining_speed": {
       "enabled": false,
       "min": {
@@ -605,6 +770,17 @@
         "value": 1024
       }
     },
+    "cold_sweat:cold_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "minecraft:generic.max_health": {
       "enabled": true,
       "min": {
@@ -616,15 +792,15 @@
         "value": 1000000
       }
     },
-    "legendarysurvivaloverhaul:permanent_heart": {
+    "cold_sweat:burning_point": {
       "enabled": false,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": -Infinity,
+        "value": -Infinity
       },
       "max": {
-        "default": 10000,
-        "value": 10000
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "skilltree:blocking": {
@@ -636,6 +812,17 @@
       "max": {
         "default": 90,
         "value": 90
+      }
+    },
+    "legendarysurvivaloverhaul:permanent_heart": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "combatroll:count": {
@@ -669,6 +856,17 @@
       "max": {
         "default": 90,
         "value": 90
+      }
+    },
+    "stardew_fishing:treasure_chance_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "attributeslib:arrow_damage": {

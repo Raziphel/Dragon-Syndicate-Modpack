@@ -51,16 +51,22 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "compactmachines": {
+    "machine": true,
+    "tunnel": true
+  },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
-  },
-  "delightful": {
-    "crop_progress": true,
-    "pie_icons": true,
-    "mushroom_colony": true
-  },
-  "twilightforest": {
-    "quest_ram_wool": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -75,12 +81,40 @@
     "ench": true,
     "spawner": true
   },
-  "waystones": {
-    "waystone": true
-  },
   "refinedcooking": {
     "kitchen_access_point": true,
     "kitchen_station": true
+  },
+  "balm": {
+    "jade": true
+  },
+  "cslcrops": {
+    "temp_data": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
+  },
+  "easy_villagers": {
+    "villager": true,
+    "converter": true,
+    "breeder": true
+  },
+  "delightful": {
+    "crop_progress": true,
+    "pie_icons": true,
+    "mushroom_colony": true
+  },
+  "twilightforest": {
+    "quest_ram_wool": true
+  },
+  "supplementaries": {
+    "hat_stand": true
+  },
+  "waystones": {
+    "waystone": true
   },
   "cookingforblockheads": {
     "fridge": true,
@@ -89,8 +123,5 @@
     "preservation_chamber": true,
     "milk_jar": true,
     "toaster": true
-  },
-  "balm": {
-    "jade": true
   }
 }
