@@ -367,6 +367,10 @@
     "modId": "entity_model_features",
     "version": "2.4.1"
   },
+  "entity_sound_features_forge_1.19.4+-0.4.jar": {
+    "modId": "entity_sound_features",
+    "version": "0.4"
+  },
   "entity_texture_features_forge_1.20.1-6.2.9.jar": {
     "modId": "entity_texture_features",
     "version": "6.2.9"
@@ -1087,6 +1091,30 @@
   "YungsApi-1.20-Forge-4.0.6.jar": {
     "modId": "yungsapi",
     "version": "1.20-Forge-4.0.6"
+  },
+  "YungsBetterDesertTemples-1.20-Forge-3.0.3.jar": {
+    "modId": "betterdeserttemples",
+    "version": "1.20-Forge-3.0.3"
+  },
+  "YungsBetterDungeons-1.20-Forge-4.0.4.jar": {
+    "modId": "betterdungeons",
+    "version": "1.20-Forge-4.0.4"
+  },
+  "YungsBetterEndIsland-1.20-Forge-2.0.6.jar": {
+    "modId": "betterendisland",
+    "version": "1.20-Forge-2.0.6"
+  },
+  "YungsBetterMineshafts-1.20-Forge-4.0.4.jar": {
+    "modId": "bettermineshafts",
+    "version": "1.20-Forge-4.0.4"
+  },
+  "YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar": {
+    "modId": "betterfortresses",
+    "version": "1.20-Forge-2.0.6"
+  },
+  "YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar": {
+    "modId": "betteroceanmonuments",
+    "version": "1.20-Forge-3.0.4"
   },
   "YungsCaveBiomes-1.20.1-Forge-2.0.4.jar": {
     "modId": "yungscavebiomes",

@@ -7,11 +7,39 @@ treatMerchantsLikeBabies = true
 #The chance to get a bonus growth when using Red Fertilizer.
 fertilizerBonusGrowthChance = 1.0
 #List of names the merchant can have.
-merchantNames = ["Swap-O-Matic", "Emerald Muncher", "Weathered Salesperson"]
+merchantNames = [
+    "Swap-O-Matic",
+    "Emerald Muncher",
+    "Weathered Salesperson",
+    "Bargain Golem",
+    "Shady Steve",
+    "One Emerald Larry",
+    "The Wandering Ripoff",
+    "Loot Llama Jr.",
+    "Ye Olde Tradesman",
+    "Suspicious Businessman",
+    "Grain for Brains",
+    "Cursed Cart Guy",
+    "Crate Enthusiast",
+    "Chest 2 Chest",
+    "Inventory Greg",
+    "Buy or Cry",
+    "Big Trade Energy",
+    "Creeper Couponer",
+    "Value Vindicator",
+    "Hot Deal Hermit",
+    "The Pocket Merchant",
+    "Discounted Dave",
+    "Haggle Hag",
+    "Mystery Mark",
+    "Bundle McBarter",
+    "Old Hat Harold"
+]
+
 #The range at which the chicken nest picks up laid eggs.
 chickenNestRange = 8
 #The maximum amount of animals (per type) until the feeding trough stops feeding.
 feedingTroughMaxAnimals = 24
 #The chance to get a bonus crop when using Green Fertilizer.
-fertilizerBonusCropChance = 1.0
+fertilizerBonusCropChance = 0.7
 

@@ -11,7 +11,7 @@
 	display_item_name = true
 	#Where and if to display the amount of items picked up. 'SPRITE' will render the amount on the item sprite like in inventories, 'TEXT' will add a dedicated text including the amount to the item name display.
 	#Allowed Values: OFF, SPRITE, TEXT, BOTH
-	display_amount = "TEXT"
+	display_amount = "BOTH"
 	#Show a small sprite next to the name of each entry showing its contents.
 	draw_sprites = true
 	#Color of the entry name text.

@@ -46,7 +46,7 @@
 	*/
 	"additional_files": [],
 	// Display file size in backup message
-	"display_file_size": false,
+	"display_file_size": true,
 	// backup location
 	"backup_location": ".",
 	// Specify the backup format. Valid options are ZIP and DIRECTORY

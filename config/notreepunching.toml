@@ -9,7 +9,7 @@
 [worldgen]
 
     # Enables loose rock world gen added automatically to biomes.
-    enableLooseRocksWorldGen = true
+    enableLooseRocksWorldGen = false
 
 
 [blockHarvesting]

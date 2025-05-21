@@ -82,7 +82,7 @@
 		[general.advancedSettings.caveDustSettings]
 			#Chance of spawning cave dust (higher = less frequent)
 			#Range: > 1
-			spawnChance = 700
+			spawnChance = 500
 			#Base maximum age of cave dust particles
 			#Range: > 1
 			baseMaxAge = 200

@@ -2,7 +2,7 @@
 logDirtBlock = true
 #A magic number
 #Range: > 0
-magicNumber = 42
+magicNumber = 69
 #What you want the introduction message to be for the magic number
 magicNumberIntroduction = "The magic number is... "
 #A list of items to log on common setup.
