@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 ["Visual Preferences"]
 	#Sets all temperatures to be displayed in Celsius
 	Celsius = false
 	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
+<<<<<<< HEAD
 	#Range: > -2147483647
 	"Temperature Offset" = 0
 	#The amount of smoothing applied to gauges in the UI
@@ -12,6 +16,20 @@
 	#Displays a dripping water effect on-screen and/or with particles when the player is wet
 	#0: Off, 1: Particles, 2: On-Screen, 3: Both
 	#Range: 0 ~ 3
+=======
+	# Default: 0
+	# Range: > -2147483647
+	"Temperature Offset" = 0
+	#The amount of smoothing applied to gauges in the UI
+	#A value of 1 has no smoothing
+	# Default: 10.0
+	# Range: 1.0 ~ 2.147483647E9
+	"Temperature Smoothing" = 10.0
+	#Displays a dripping water effect on-screen and/or with particles when the player is wet
+	#0: Off, 1: Particles, 2: On-Screen, 3: Both
+	# Default: 3
+	# Range: 0 ~ 3
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 	"Show Water Effect" = 3
 
 ["UI Options"]
@@ -52,4 +70,7 @@
 	"Hide Tooltips" = false
 	#Automatically expands all collapsible tooltips
 	"Expand Tooltips" = false
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

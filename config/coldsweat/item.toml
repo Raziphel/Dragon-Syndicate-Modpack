@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 ["Fuel Items"]
 	#Defines items that can be used as fuel
 	#Format: [["item-id-1", amount-1], ["item-id-2", amount-2], ...etc]
@@ -55,7 +58,12 @@
 	#- Format: [number, max-slots] (a positive integer or decimal; the rate of increase)
 	"Insulation Slots" = ["static", 4, 6, 5, 4]
 	#Defines the effectiveness of insulating items in protecting against temperature
+<<<<<<< HEAD
 	#Range: 0.0 ~ 1.7976931348623157E308
+=======
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 	"Insulation Strength" = 1.0
 	#Defines wearable items that cannot be insulated
 	#Format: ["item_id", "item_id", ...etc]
@@ -69,11 +77,21 @@
 	#duration: Optional. If set, the player's temperature will remain increased/decreased for this amount of time (in ticks).
 	"Temperature-Affecting Foods" = [["cold_sweat:soul_sprout", -20, "{}", 1200]]
 	#Defines how much a waterskin will change the player's body temperature by when used
+<<<<<<< HEAD
 	#Range: > 0
 	"Waterskin Strength" = 50
 	#Determines the strength of the Soulspring Lamp's effect before it is overwhelmed
 	#A value of 1 means it will never be overwhelmed
 	#Range: 0.0 ~ 1.0
+=======
+	# Default: 50
+	# Range: > 0
+	"Waterskin Strength" = 50
+	#Determines the strength of the Soulspring Lamp's effect before it is overwhelmed
+	#A value of 1 means it will never be overwhelmed
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 	"Soulspring Lamp Strength" = 0.6
 	#Defines items that can be used to dry the player
 	#Format: [["item_id", "turns_into"], ["item_id", "turns_into"], ...etc]
@@ -95,4 +113,7 @@
 ["Create Backtank"]
 	"Heat Drains Backtank" = true
 	"Cold Drains Backtank" = false
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

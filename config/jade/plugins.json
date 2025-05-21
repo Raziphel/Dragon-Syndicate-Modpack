@@ -5,13 +5,15 @@
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage.normal_amount": 9,
+    "energy_storage.style": "PROGRESS_BAR",
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
+    "next_entity_drop": true,
     "energy_storage": true,
-    "entity_armor.max_for_render": 40,
+    "entity_armor.max_for_render": 20,
     "breaking_progress": true,
     "tnt_stability": true,
     "item_storage.items_per_line": 9,
@@ -26,15 +28,14 @@
     "mob_spawner": true,
     "redstone": true,
     "fluid_storage": true,
-    "chicken_egg": true,
     "jukebox": true,
     "brewing_stand": true,
     "energy_storage.detailed": false,
     "note_block": true,
+    "fluid_storage.style": "PROGRESS_BAR",
     "beehive": true,
     "item_storage.detailed_amount": 54,
     "player_head": true,
-    "block_states": false,
     "lectern": true,
     "entity_armor": true,
     "harvest_tool.creative": false,
@@ -51,10 +52,13 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+<<<<<<< HEAD
   "compactmachines": {
     "machine": true,
     "tunnel": true
   },
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -65,22 +69,73 @@
     "goggles.detailed": false,
     "placard": true
   },
+<<<<<<< HEAD
+=======
+  "apothic_spawners": {
+    "spawner": true
+  },
+  "jade_access": {
+    "held_item": true,
+    "sign": true,
+    "block": true,
+    "entity": true,
+    "entity_variant": true
+  },
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
   "immersiveengineering": {
     "multiblock_icon": true
   },
   "jade": {
     "coordinates.rel": false,
+    "registry_name.special": false,
+    "block_states": false,
     "distance": false,
     "block_face": false,
     "coordinates": false,
     "registry_name": "OFF",
+    "block_properties": false,
     "mod_name": true
   },
   "apotheosis": {
-    "adventure": true,
-    "ench": true,
-    "spawner": true
+    "adventure": true
   },
+  "apothic_enchanting": {
+    "ench": true
+  },
+  "balm": {
+    "jade": true
+  },
+  "extendedcrafting": {
+    "elite_auto_table": true,
+    "ender_crafter": true,
+    "basic_auto_table": true,
+    "flux_crafter": true,
+    "advanced_table": true,
+    "auto_ender_crafter": true,
+    "ultimate_table": true,
+    "ultimate_auto_table": true,
+    "elite_table": true,
+    "basic_table": true,
+    "crafting_core": true,
+    "advanced_auto_table": true,
+    "compressor": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
+  },
+  "easy_villagers": {
+    "villager": true,
+    "converter": true,
+    "breeder": true
+  },
+  "twilightforest": {
+    "chiseled_bookshelf_spawner": true,
+    "quest_ram_wool": true
+  },
+<<<<<<< HEAD
   "refinedcooking": {
     "kitchen_access_point": true,
     "kitchen_station": true
@@ -113,6 +168,8 @@
   "supplementaries": {
     "hat_stand": true
   },
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
   "waystones": {
     "waystone": true
   },

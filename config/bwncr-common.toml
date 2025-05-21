@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 
 [General]
+=======
+[general]
+	#General settings
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 	#Silence the server-wide Wither spawn and death broadcast sounds.
 	silenceWither = true
 	#Silence the wandering trader's ambient sound.
@@ -13,4 +18,7 @@
 	silenceUs = [""]
 	#If enabled the console will load up spam showing what sounds are being received and whether or not they are being canceled
 	debugMode = false
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

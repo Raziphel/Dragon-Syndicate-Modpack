@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 
 #General settings
 [general]
 	#Maximum distance you can build at
 	#Range: 1 ~ 64
+=======
+#General settings
+[general]
+	#Maximum distance you can build at
+	# Default: 32
+	# Range: 1 ~ 64
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 	rayTraceRange = 32
 
 #Power settings
@@ -11,24 +19,43 @@
 	#Building Gadget
 	[power.building_gadget]
 		#Maximum power for the Building Gadget
+<<<<<<< HEAD
 		#Range: > 0
 		maxPower = 500000
 		#Base cost per block placed
 		#Range: > 0
+=======
+		# Default: 500000
+		# Range: > 0
+		maxPower = 500000
+		#Base cost per block placed
+		# Default: 50
+		# Range: > 0
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 		baseCost = 50
 
 	#Exchanging Gadget
 	[power.exchanging_gadget]
 		#Maximum power for the Exchanging Gadget
+<<<<<<< HEAD
 		#Range: > 0
 		maxPower = 500000
 		#Base cost per block exchanged
 		#Range: > 0
+=======
+		# Default: 500000
+		# Range: > 0
+		maxPower = 500000
+		#Base cost per block exchanged
+		# Default: 100
+		# Range: > 0
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 		baseCost = 100
 
 	#Cut Paste Gadget
 	[power.cutpaste_gadget]
 		#Maximum power for the Cut and Paste Gadget
+<<<<<<< HEAD
 		#Range: > 0
 		maxPower = 5000000
 		#(LEGACY) NO LONGER USED
@@ -37,22 +64,50 @@
 		#Base cost per block - Checked during CUT, Charged during PASTE
 		#Range: > 0
 		baseCostNew = 50
+=======
+		# Default: 5000000
+		# Range: > 0
+		maxPower = 5000000
+		#Base cost per block - Checked during CUT, Charged during PASTE
+		# Default: 50
+		# Range: > 0
+		baseCost = 50
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 
 	#Copy Paste Gadget
 	[power.copypaste_gadget]
 		#Maximum power for the Copy and Paste Gadget
+<<<<<<< HEAD
 		#Range: > 0
 		maxPower = 1000000
 		#Base cost per block Paste (Copy is Free)
 		#Range: > 0
+=======
+		# Default: 1000000
+		# Range: > 0
+		maxPower = 1000000
+		#Base cost per block Paste (Copy is Free)
+		# Default: 50
+		# Range: > 0
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 		baseCost = 50
 
 	#Destruction Gadget
 	[power.destruction_gadget]
 		#Maximum power for the Destruction Gadget
+<<<<<<< HEAD
 		#Range: > 0
 		maxPower = 1000000
 		#Base cost per block Destroyed
 		#Range: > 0
 		baseCost = 200
 
+=======
+		# Default: 2000000
+		# Range: > 0
+		maxPower = 2000000
+		#Base cost per block Destroyed
+		# Default: 50
+		# Range: > 0
+		baseCost = 50
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

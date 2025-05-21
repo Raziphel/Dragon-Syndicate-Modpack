@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
   "serverOnly": false
+=======
+  "server_only": false,
+  "world_gen_unification": false
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 }

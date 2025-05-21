@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 #General mod settings
 [general]
 	#logging
@@ -7,4 +10,7 @@
 	useLoggingDebug = false
 	#-
 	useLoggingError = true
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4

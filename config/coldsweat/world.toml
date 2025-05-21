@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 #Format: [["dimension_1", temperature1, *units], ["dimension_2", temperature2, *units]... etc]
 #Common dimension IDs: minecraft:overworld, minecraft:the_nether, minecraft:the_end
 [Dimensions]
@@ -36,7 +39,12 @@
 	#The maximum range of blocks' area of effect
 	#Note: This will not change anything unless blocks are configured to utilize the expanded range
 	#This value is capped at 16 for performance reasons
+<<<<<<< HEAD
 	#Range: 1 ~ 16
+=======
+	# Default: 7
+	# Range: 1 ~ 16
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 	"Block Range" = 7
 	#When set to true, uses Cold Sweat's temperature system to determine water freezing behavior
 	"Custom Freezing Behavior" = true
@@ -66,11 +74,20 @@
 
 ["Thermal Sources"]
 	#How effective thermal sources are at normalizing temperature
+<<<<<<< HEAD
 	#Range: 0.0 ~ 1.0
 	"Thermal Source Strength" = 0.75
 	#List of additional blocks that thermal sources can spread through
 	#Use this list if thermal sources aren't spreading through particular blocks that they should
 	"Thermal Source Spread Whitelist" = ["cold_sweat:hearth_bottom", "minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "would:willow_leaves", "would:baobab_leaves", "would:ebony_leaves", "would:fir_leaves", "would:pine_leaves", "would:cedar_leaves", "would:mahogany_leaves", "would:palm_leaves", "would:maple_leaves", "would:aspen_leaves", "would:walnut_leaves", "twilightforest:rainbow_oak_leaves", "twilightforest:twilight_oak_leaves", "twilightforest:canopy_leaves", "twilightforest:mangrove_leaves", "twilightforest:dark_leaves", "twilightforest:time_leaves", "twilightforest:transformation_leaves", "twilightforest:mining_leaves", "twilightforest:sorting_leaves", "twilightforest:thorn_leaves", "twilightforest:beanstalk_leaves", "chipped:apple_acacia_leaves", "chipped:cherry_acacia_leaves", "chipped:dead_acacia_leaves", "chipped:frosted_acacia_leaves", "chipped:golden_acacia_leaves", "chipped:golden_apple_acacia_leaves", "chipped:golden_cherry_acacia_leaves", "chipped:magenta_flower_acacia_leaves", "chipped:orange_acacia_leaves", "chipped:red_acacia_leaves", "chipped:white_flower_acacia_leaves", "chipped:apple_birch_leaves", "chipped:cherry_birch_leaves", "chipped:dead_birch_leaves", "chipped:frosted_birch_leaves", "chipped:golden_birch_leaves", "chipped:golden_apple_birch_leaves", "chipped:golden_cherry_birch_leaves", "chipped:magenta_flower_birch_leaves", "chipped:orange_birch_leaves", "chipped:red_birch_leaves", "chipped:white_flower_birch_leaves", "chipped:apple_dark_oak_leaves", "chipped:cherry_dark_oak_leaves", "chipped:dead_dark_oak_leaves", "chipped:frosted_dark_oak_leaves", "chipped:golden_dark_oak_leaves", "chipped:golden_apple_dark_oak_leaves", "chipped:golden_cherry_dark_oak_leaves", "chipped:magenta_flower_dark_oak_leaves", "chipped:orange_dark_oak_leaves", "chipped:red_dark_oak_leaves", "chipped:white_flower_dark_oak_leaves", "chipped:apple_jungle_leaves", "chipped:cherry_jungle_leaves", "chipped:dead_jungle_leaves", "chipped:frosted_jungle_leaves", "chipped:golden_jungle_leaves", "chipped:golden_apple_jungle_leaves", "chipped:golden_cherry_jungle_leaves", "chipped:magenta_flower_jungle_leaves", "chipped:orange_jungle_leaves", "chipped:red_jungle_leaves", "chipped:white_flower_jungle_leaves", "chipped:apple_oak_leaves", "chipped:cherry_oak_leaves", "chipped:dead_oak_leaves", "chipped:frosted_oak_leaves", "chipped:golden_oak_leaves", "chipped:golden_apple_oak_leaves", "chipped:golden_cherry_oak_leaves", "chipped:magenta_flower_oak_leaves", "chipped:orange_oak_leaves", "chipped:red_oak_leaves", "chipped:white_flower_oak_leaves", "chipped:apple_spruce_leaves", "chipped:cherry_spruce_leaves", "chipped:dead_spruce_leaves", "chipped:frosted_spruce_leaves", "chipped:golden_spruce_leaves", "chipped:golden_apple_spruce_leaves", "chipped:golden_cherry_spruce_leaves", "chipped:magenta_flower_spruce_leaves", "chipped:orange_spruce_leaves", "chipped:red_spruce_leaves", "chipped:white_flower_spruce_leaves", "twilightdelight:ironwood_leaves", "create:encased_fluid_pipe"]
+=======
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	"Thermal Source Strength" = 0.75
+	#List of additional blocks that thermal sources can spread through
+	#Use this list if thermal sources aren't spreading through particular blocks that they should
+	"Thermal Source Spread Whitelist" = ["cold_sweat:hearth_bottom", "minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "twilightforest:rainbow_oak_leaves", "twilightforest:twilight_oak_leaves", "twilightforest:canopy_leaves", "twilightforest:mangrove_leaves", "twilightforest:dark_leaves", "twilightforest:time_leaves", "twilightforest:transformation_leaves", "twilightforest:mining_leaves", "twilightforest:sorting_leaves", "twilightforest:thorn_leaves", "twilightforest:beanstalk_leaves", "chipped:apple_acacia_leaves", "chipped:cherry_acacia_leaves", "chipped:dead_acacia_leaves", "chipped:frosted_acacia_leaves", "chipped:golden_acacia_leaves", "chipped:golden_apple_acacia_leaves", "chipped:golden_cherry_acacia_leaves", "chipped:magenta_flower_acacia_leaves", "chipped:orange_acacia_leaves", "chipped:red_acacia_leaves", "chipped:white_flower_acacia_leaves", "chipped:apple_birch_leaves", "chipped:cherry_birch_leaves", "chipped:dead_birch_leaves", "chipped:frosted_birch_leaves", "chipped:golden_birch_leaves", "chipped:golden_apple_birch_leaves", "chipped:golden_cherry_birch_leaves", "chipped:magenta_flower_birch_leaves", "chipped:orange_birch_leaves", "chipped:red_birch_leaves", "chipped:white_flower_birch_leaves", "chipped:apple_dark_oak_leaves", "chipped:cherry_dark_oak_leaves", "chipped:dead_dark_oak_leaves", "chipped:frosted_dark_oak_leaves", "chipped:golden_dark_oak_leaves", "chipped:golden_apple_dark_oak_leaves", "chipped:golden_cherry_dark_oak_leaves", "chipped:magenta_flower_dark_oak_leaves", "chipped:orange_dark_oak_leaves", "chipped:red_dark_oak_leaves", "chipped:white_flower_dark_oak_leaves", "chipped:apple_jungle_leaves", "chipped:cherry_jungle_leaves", "chipped:dead_jungle_leaves", "chipped:frosted_jungle_leaves", "chipped:golden_jungle_leaves", "chipped:golden_apple_jungle_leaves", "chipped:golden_cherry_jungle_leaves", "chipped:magenta_flower_jungle_leaves", "chipped:orange_jungle_leaves", "chipped:red_jungle_leaves", "chipped:white_flower_jungle_leaves", "chipped:apple_oak_leaves", "chipped:cherry_oak_leaves", "chipped:dead_oak_leaves", "chipped:frosted_oak_leaves", "chipped:golden_oak_leaves", "chipped:golden_apple_oak_leaves", "chipped:golden_cherry_oak_leaves", "chipped:magenta_flower_oak_leaves", "chipped:orange_oak_leaves", "chipped:red_oak_leaves", "chipped:white_flower_oak_leaves", "chipped:apple_spruce_leaves", "chipped:cherry_spruce_leaves", "chipped:dead_spruce_leaves", "chipped:frosted_spruce_leaves", "chipped:golden_spruce_leaves", "chipped:golden_apple_spruce_leaves", "chipped:golden_cherry_spruce_leaves", "chipped:magenta_flower_spruce_leaves", "chipped:orange_spruce_leaves", "chipped:red_spruce_leaves", "chipped:white_flower_spruce_leaves", "create:encased_fluid_pipe"]
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 	#List of additional blocks that thermal sources spread through
 	#Use this list if thermal sources are spreading through particular blocks that they shouldn't
 	"Thermal Source Spread Blacklist" = ["minecraft:water"]
@@ -80,6 +97,7 @@
 		#If false, it turns on/off by redstone signal instead
 		"Automatic Hearth" = false
 		#The distance the hearth's air will travel from a source, like the hearth itself or the end of a pipe
+<<<<<<< HEAD
 		#Range: > 0
 		"Hearth Range" = 20
 		#The maximum distance that air can be piped away from the hearth
@@ -97,6 +115,31 @@
 		#How often the hearth consumes fuel (in ticks)
 		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
 		#Range: > 0
+=======
+		# Default: 20
+		# Range: > 0
+		"Hearth Range" = 20
+		#The maximum distance that air can be piped away from the hearth
+		# Default: 96
+		# Range: > 0
+		"Max Hearth Range" = 96
+		#The maximum volume of the hearth's area of effect
+		# Default: 12000
+		# Range: > 1
+		"Hearth Volume" = 12000
+		#The time it takes for the hearth to be fully functional after being placed
+		# Default: 1200
+		# Range: > 0
+		"Hearth Warm-Up Time" = 1200
+		#The maximum amount of insulation that the hearth can provide
+		# Default: 10
+		# Range: 0 ~ 10
+		"Hearth Effect Strength" = 10
+		#How often the hearth consumes fuel (in ticks)
+		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
+		# Default: 40
+		# Range: > 0
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 		"Hearth Fuel Consumption Interval" = 40
 
 	["Thermal Sources".Boiler]
@@ -104,6 +147,7 @@
 		#If false, it turns on/off by redstone signal instead
 		"Automatic Boiler" = false
 		#The distance the boiler's air will travel from a source, like the boiler itself or the end of a pipe
+<<<<<<< HEAD
 		#Range: > 0
 		"Boiler Range" = 16
 		#The maximum distance that air can be piped away from the boiler
@@ -121,6 +165,31 @@
 		#How often the boiler consumes fuel (in ticks)
 		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
 		#Range: > 0
+=======
+		# Default: 16
+		# Range: > 0
+		"Boiler Range" = 16
+		#The maximum distance that air can be piped away from the boiler
+		# Default: 96
+		# Range: > 0
+		"Max Boiler Range" = 96
+		#The maximum volume of the boiler's area of effect
+		# Default: 2000
+		# Range: > 1
+		"Boiler Volume" = 2000
+		#The time it takes for the boiler to be fully functional after being placed
+		# Default: 1200
+		# Range: > 0
+		"Boiler Warm-Up Time" = 1200
+		#The maximum amount of insulation that the boiler can provide
+		# Default: 5
+		# Range: 0 ~ 10
+		"Boiler Warmth Strength" = 5
+		#How often the boiler consumes fuel (in ticks)
+		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
+		# Default: 40
+		# Range: > 0
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
 		"Boiler Fuel Consumption Interval" = 40
 
 	["Thermal Sources".Icebox]
@@ -128,6 +197,7 @@
 		#If false, it turns on/off by redstone signal instead
 		"Automatic Icebox" = false
 		#The distance the icebox's air will travel from a source, like the icebox itself or the end of a pipe
+<<<<<<< HEAD
 		#Range: > 0
 		"Icebox Range" = 16
 		#The maximum distance that air can be piped away from the icebox
@@ -147,3 +217,29 @@
 		#Range: > 0
 		"Icebox Fuel Consumption Interval" = 40
 
+=======
+		# Default: 16
+		# Range: > 0
+		"Icebox Range" = 16
+		#The maximum distance that air can be piped away from the icebox
+		# Default: 96
+		# Range: > 0
+		"Max Icebox Range" = 96
+		#The maximum volume of the icebox's area of effect
+		# Default: 2000
+		# Range: > 1
+		"Icebox Volume" = 2000
+		#The time it takes for the icebox to be fully functional after being placed
+		# Default: 1200
+		# Range: > 0
+		"Icebox Warm-Up Time" = 1200
+		#The maximum amount of insulation that the icebox can provide
+		# Default: 5
+		# Range: 0 ~ 10
+		"Icebox Chill Strength" = 5
+		#How often the icebox consumes fuel (in ticks)
+		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
+		# Default: 40
+		# Range: > 0
+		"Icebox Fuel Consumption Interval" = 40
+>>>>>>> 2778019517a0433caf58eb6181fb0d0fb37a26d4
