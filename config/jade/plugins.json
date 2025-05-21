@@ -76,6 +76,11 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "apotheosis": {
+    "adventure": true,
+    "ench": true,
+    "spawner": true
+  },
   "refinedcooking": {
     "kitchen_access_point": true,
     "kitchen_station": true
@@ -104,6 +109,9 @@
   },
   "twilightforest": {
     "quest_ram_wool": true
+  },
+  "supplementaries": {
+    "hat_stand": true
   },
   "waystones": {
     "waystone": true

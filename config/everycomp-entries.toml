@@ -16,6 +16,14 @@
 		[types.stone_type.spelunkery]
 			nephrite = true
 
+		[types.stone_type.quark]
+			soul_sandstone = true
+			limestone = true
+			jasper = true
+			shale = true
+			myalite = true
+			permafrost = true
+
 	[types.wood_type]
 
 		[types.wood_type.would]
@@ -44,6 +52,11 @@
 			transformation = true
 			mining = true
 			sorting = true
+
+		[types.wood_type.quark]
+			azalea = true
+			ancient = true
+			blossom = true
 
 	[types.leaves_type]
 
@@ -143,6 +156,19 @@
 
 		[types.leaves_type.twilightdelight]
 			ironwood = true
+
+		[types.leaves_type.quark]
+			ancient = true
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+
+	[types.cake]
+
+		[types.cake.farmersrespite]
+			coffee_cake = true
 
 #Disables specific entries
 [entries]
@@ -365,6 +391,11 @@
 			pane_window = true
 			four_window = true
 			window = true
+
+		[entries.stone_type.quark]
+			vertical_slab = true
+			polished_vertical_slab = true
+			pillar = true
 
 	[entries.wood_type]
 
@@ -736,8 +767,30 @@
 			window_pane = true
 			window = true
 
+		[entries.wood_type.quark]
+			vertical_planks = true
+			vertical_slab = true
+			hollow_log = true
+			bookshelf = true
+			ladder = true
+			post = true
+			trapped_chest = true
+			chest = true
+			stripped_post = true
+
 	[entries.leaves_type]
 
 		[entries.leaves_type.mcwfences]
 			hedge = true
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
+
+	[entries.mud_type]
+
+		[entries.mud_type.quark]
+			carved_bricks = true
+			pillar = true
+			brick_lattice = true
 

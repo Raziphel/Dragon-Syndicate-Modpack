@@ -1,4 +1,7 @@
 {
+  "apotheosis:adventure": null,
+  "apotheosis:ench": null,
+  "apotheosis:spawner": null,
   "balm:jade": null,
   "compactmachines:machine": null,
   "compactmachines:machine_tunnels": null,
@@ -81,6 +84,9 @@
   "minecraft:zombie_villager": null,
   "refinedcooking:kitchen_access_point": null,
   "refinedcooking:kitchen_station": null,
+  "supplementaries:hat_stand": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null,
   "twilightforest:quest_ram_wool": null,
   "waystones:waystone": null
 }

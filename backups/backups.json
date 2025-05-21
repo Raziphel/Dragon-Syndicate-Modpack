@@ -2,19 +2,6 @@
   "backups": [
     {
       "worldName": "New World",
-      "createTime": 1747776600431,
-      "backupLocation": "C:\\Users\\hi\\curseforge\\minecraft\\Instances\\Dragon Syndicate - Dev\\backups\\2025-5-20_16-30-0.zip",
-      "size": 176332276,
-      "ratio": 0.9403156,
-      "sha1": "4e9ce737e239f083449c4cbab936cfae016e8cc3",
-      "preview": "",
-      "snapshot": false,
-      "backupName": "automated",
-      "backupFormat": "ZIP",
-      "complete": true
-    },
-    {
-      "worldName": "New World",
       "createTime": 1747780201216,
       "backupLocation": "C:\\Users\\hi\\curseforge\\minecraft\\Instances\\Dragon Syndicate - Dev\\backups\\2025-5-20_17-30-0.zip",
       "size": 181423226,
@@ -59,6 +46,19 @@
       "size": 28668420,
       "ratio": 0.88011354,
       "sha1": "2e43910f09238fdf53b34a10c807621b6af25b40",
+      "preview": "",
+      "snapshot": false,
+      "backupName": "automated",
+      "backupFormat": "ZIP",
+      "complete": true
+    },
+    {
+      "worldName": "New World",
+      "createTime": 1747818000622,
+      "backupLocation": "C:\\Users\\hi\\curseforge\\minecraft\\Instances\\Dragon Syndicate - Dev\\backups\\2025-5-21_4-0-0.zip",
+      "size": 21400726,
+      "ratio": 0.84395933,
+      "sha1": "53da7fa70393830ef3380825b3260a7c4677afa9",
       "preview": "",
       "snapshot": false,
       "backupName": "automated",
