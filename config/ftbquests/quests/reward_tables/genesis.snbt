@@ -1,0 +1,54 @@
+{
+	id: "7F1EABD5D4341904"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "create:experience_nugget" }
+		{ count: 8, item: "minecraft:bread" }
+		{ item: "cold_sweat:waterskin" }
+		{ item: "brewincompatdelight:gin" }
+		{
+			item: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/tyrannical"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/combatant"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/ballast"
+				}
+			}
+		}
+		{ count: 2, item: "majruszsdifficulty:recall_potion" }
+		{ item: "minecraft:compass" }
+		{ item: "comforts:hammock_white" }
+		{ item: "comforts:sleeping_bag_white" }
+		{ item: "minecraft:clock" }
+		{ count: 8, item: "minecraft:cooked_beef" }
+	]
+	title: "Genesis"
+}

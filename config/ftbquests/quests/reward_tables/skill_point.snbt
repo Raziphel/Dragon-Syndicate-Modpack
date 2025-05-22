@@ -1,0 +1,15 @@
+{
+	id: "71C6261D582DEDEB"
+	loot_size: 1
+	order_index: 0
+	rewards: [{
+		command: "/skilltree points add @p 1"
+		elevate_perms: true
+		icon: "ftb_ph:passive"
+		silent: true
+		team_reward: false
+		title: "Get a Skill Point"
+		type: "command"
+	}]
+	title: " Skill Point"
+}

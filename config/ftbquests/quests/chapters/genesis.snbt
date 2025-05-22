@@ -1,0 +1,361 @@
+{
+	autofocus_id: "25BAE75AC9955CC8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "genesis"
+	group: ""
+	icon: "minecraft:gravel"
+	id: "12AD1CF25713B936"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"This modpack was created for the &5&lDragon Syndicate &rcommunity!"
+				""
+				"Please if you haven't already join our &9discord!"
+				""
+				"You can find a link to our Discord and Github in the top right corner when you pause!"
+				""
+				"&l&0Click the checkmark to complete your first quest!"
+			]
+			icon: "minecraft:grass_block"
+			id: "25BAE75AC9955CC8"
+			rewards: [{
+				id: "13ABC50EFF20169B"
+				item: "akashictome:tome"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 3.0d
+			subtitle: "&6Welcome to Dragon Syndicate"
+			tasks: [{
+				id: "08F18DC6670FE106"
+				title: "Welcome To Dragon Syndicate"
+				type: "checkmark"
+			}]
+			title: "&6&lWelcome"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0021CF970A4FCC8E"]
+			description: [
+				"Break gravel to get some flint.  "
+				""
+				"You can also use 3 gravel in a crafting grid to get 2 flint if you are unlucky getting flint."
+			]
+			icon: "minecraft:gravel"
+			id: "5DE8376A2680C3D7"
+			rewards: [{
+				count: 5
+				id: "13D3089BEC26BC07"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "You need flint!"
+			tasks: [{
+				count: 5L
+				id: "34DEFAC244B16952"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			title: "&2Breaking Gravel"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["25BAE75AC9955CC8"]
+			description: [
+				"The first thing you will want to get your hands on is some sticks!"
+				""
+				"You can get sticks from either breaking leaves or breaking dead bushes."
+			]
+			id: "0021CF970A4FCC8E"
+			rewards: [{
+				id: "2ACEBDD7ACE6A732"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Getting Started!"
+			tasks: [{
+				count: 4L
+				id: "3A3E9B6227BC5703"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			title: "&2Getting Sticks"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DE8376A2680C3D7"]
+			description: [
+				"Now that you have your flint you will need to sharpen it!"
+				""
+				"Simply just right click flint on something hard like stone to get some shards."
+			]
+			id: "1EAA14D5B64AE6CA"
+			rewards: [{
+				id: "3AD78EC811D0E11B"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "apotheosis:long_haste"
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Get up and slam!"
+			tasks: [{
+				id: "5D7B2FB7759EE94E"
+				item: "notreepunching:flint_shard"
+				type: "item"
+			}]
+			title: "&2Getting Sharp"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1EAA14D5B64AE6CA"]
+			description: [
+				"Now you will need to craft a flint kinfe so that you can break grass!"
+				""
+				"This will give you &2Plant Fibers &rwhich are you used to make your first tools!"
+			]
+			id: "3674A3CABF6B3AE2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6AF6CF2329765649"
+				table_id: 9159947626994735364L
+				type: "random"
+			}]
+			shape: "rsquare"
+			subtitle: "Baby's first weapon!"
+			tasks: [{
+				id: "02DD23244BE09D40"
+				item: {
+					Count: 1
+					id: "notreepunching:flint_knife"
+					tag: {
+						Damage: 0
+						affix_data: {
+							sockets: 1
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "&2This is a Kno'ife"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2CBACD6D5ABB3F29"]
+			id: "189E61CEBB5F08FC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13B90F2C772F11B0"
+				table_id: 8198282079149878763L
+				type: "loot"
+			}]
+			shape: "rsquare"
+			subtitle: "Now cut that tree!"
+			tasks: [{
+				id: "7C57F2BA7640E1FB"
+				item: {
+					Count: 1
+					id: "notreepunching:flint_axe"
+					tag: {
+						Damage: 0
+						affix_data: {
+							sockets: 1
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "&2Back to the basics"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["189E61CEBB5F08FC"]
+			description: [
+				"Now the game can truly begin!"
+				""
+				"You've gotten past what normally takes 6 seconds in the base game!"
+			]
+			id: "681A04D6FA7FCC72"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40650FDD3395108E"
+				table_id: 9159947626994735364L
+				type: "random"
+			}]
+			shape: "rsquare"
+			subtitle: "Now get to it!"
+			tasks: [{
+				id: "1C5AC6046AA39E6C"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "&2The Craft in Minecraft"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["681A04D6FA7FCC72"]
+			description: ["I mean what did you expect to come after a crafting table?"]
+			id: "5087FE281C64511C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4275BDF456E928C3"
+				table_id: 9159947626994735364L
+				type: "random"
+			}]
+			shape: "rsquare"
+			subtitle: "The obvious next step!"
+			tasks: [{
+				id: "0AFB5AC9A7466885"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "&2Getting Warmer"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["41CEAF7CD7049198"]
+			description: ["Get a real tool and get to playing Minecraft!"]
+			id: "277619AC1465CCD5"
+			rewards: [{
+				count: 32
+				id: "4530BD0350F3F335"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "A real tool!"
+			tasks: [{
+				id: "02FB4B70F3D26351"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+						affix_data: {
+							sockets: 0
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "&2First Lap"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3674A3CABF6B3AE2"]
+			id: "2CBACD6D5ABB3F29"
+			shape: "rsquare"
+			tasks: [{
+				id: "37A718BDE83FCFA0"
+				item: "notreepunching:plant_string"
+				type: "item"
+			}]
+			title: "&2Gettin' String"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5087FE281C64511C"]
+			description: ["Time to get in the mine and get the usual stuff!"]
+			id: "41CEAF7CD7049198"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0DBDE6E45808D1D8"
+				table_id: 9159947626994735364L
+				type: "random"
+			}]
+			shape: "rsquare"
+			subtitle: "IT'S FUCKIN' RAW!"
+			tasks: [{
+				count: 3L
+				id: "36F112575984A0CF"
+				item: { Count: 3, id: "minecraft:raw_iron" }
+				type: "item"
+			}]
+			title: "&2Gettin' Raw!"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["277619AC1465CCD5"]
+			description: [
+				"Time to get what used to be the best material!"
+				""
+				"Remember that?"
+				""
+				"Good times... Good times..."
+			]
+			id: "26257835816BD832"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "73C9773C2764AED6"
+				table_id: 9159947626994735364L
+				type: "random"
+			}]
+			shape: "rsquare"
+			subtitle: "A girl's best friend!"
+			tasks: [{
+				id: "6C0FF8C3AF226375"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "&2Ooo Shiny"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["26257835816BD832"]
+			description: [
+				"With this you can mine almost anything!"
+				""
+				"Except like... Some stuff..."
+			]
+			id: "389BDAD93B9D6284"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A32ED9635F6A48B"
+				table_id: 8198282079149878763L
+				type: "loot"
+			}]
+			shape: "rsquare"
+			subtitle: "Now you can truly mine!"
+			tasks: [{
+				id: "315A52BF37097988"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_pickaxe"
+					tag: {
+						Damage: 0
+						affix_data: {
+							sockets: 0
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "&2Better Tools"
+			x: 1.5d
+			y: -1.0d
+		}
+	]
+	subtitle: ["Getting Started!"]
+	title: "Genesis"
+}

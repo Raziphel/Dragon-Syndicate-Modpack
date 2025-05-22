@@ -13,7 +13,7 @@
 	#Disabling this will remove chat messages when you gain a skill point.
 	"Show chat messages" = true
 	#Warning: If you disable this make sure you make alternative way of getting skill points.
-	"Enable exprerience exchange for skill points" = true
+	"Enable exprerience exchange for skill points" = false
 
 [Gems]
 	#Range: 0.0 ~ 1.0

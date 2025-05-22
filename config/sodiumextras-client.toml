@@ -42,7 +42,7 @@
 			#Configure Darkness Mode
 			#Each config changes what is considered 'true darkness'
 			#Allowed Values: PITCH_BLACK, TOTAL_DARKNESS, DARK, DIM, OFF
-			mode = "OFF"
+			mode = "DIM"
 			#Toggle Darkness on Overworld dimension
 			enableOnOverworld = true
 			#Toggle Darkness on Nether dimension
@@ -56,7 +56,7 @@
 			#Range: 0.0 ~ 1.0
 			endFogBright = 0.5
 			#Toggle Darkness default mode for modded dimensions
-			valueByDefault = false
+			valueByDefault = true
 			#List of all dimensions to use True Darkness
 			#This option overrides 'valueByDefault' state
 			dimensionWhitelist = []
@@ -88,7 +88,7 @@
 			[embeddiumextras.performance.distanceCulling.tileEntities]
 				#Toggles distance culling for Block Entities
 				#Maybe you use another mod for that :(
-				enable = true
+				enable = false
 				#Configure horizontal max distance before cull Block entities
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
@@ -106,7 +106,7 @@
 			[embeddiumextras.performance.distanceCulling.entities]
 				#Toggles distance culling for entities
 				#Maybe you use another mod for that :(
-				enable = true
+				enable = false
 				#Configure horizontal max distance before cull entities
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
