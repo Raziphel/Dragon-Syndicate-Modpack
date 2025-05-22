@@ -3,7 +3,7 @@
 #Common dimension IDs: minecraft:overworld, minecraft:the_nether, minecraft:the_end
 [Dimensions]
 	#Applies an offset to the world's temperature across an entire dimension
-	"Dimension Temperature Offsets" = [["minecraft:the_nether", 0.7], ["minecraft:the_end", -0.1]]
+	"Dimension Temperature Offsets" = [["minecraft:the_nether", 0.7], ["minecraft:the_end", -0.5], ["twilightforest:twilight_forest", 0.2]]
 	#Defines the temperature of a dimension, overriding all other biome and dimension temperatures/settings
 	"Dimension Temperatures" = []
 
