@@ -256,8 +256,8 @@
 				type: "item"
 			}]
 			title: "&2First Lap"
-			x: 0.0d
-			y: -2.0d
+			x: 3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3674A3CABF6B3AE2"]
@@ -273,7 +273,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["5087FE281C64511C"]
 			description: ["Time to get in the mine and get the usual stuff!"]
 			id: "41CEAF7CD7049198"
 			rewards: [{
@@ -291,8 +290,8 @@
 				type: "item"
 			}]
 			title: "&2Gettin' Raw!"
-			x: -1.0d
-			y: -2.0d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["277619AC1465CCD5"]
@@ -318,8 +317,8 @@
 				type: "item"
 			}]
 			title: "&2Ooo Shiny"
-			x: 1.0d
-			y: -2.0d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["26257835816BD832"]
@@ -352,8 +351,8 @@
 				type: "item"
 			}]
 			title: "&2Better Tools"
-			x: 1.5d
-			y: -1.0d
+			x: 5.5d
+			y: -3.5d
 		}
 	]
 	subtitle: ["Getting Started!"]

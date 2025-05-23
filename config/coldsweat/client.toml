@@ -27,7 +27,7 @@
 	#The position of the body temperature readout relative to default
 	"Body Temperature Readout Offset" = [0, 0]
 	#Enables the body temperature readout above the hotbar
-	"Show Body Temperature Readout" = true
+	"Show Body Temperature Readout" = false
 	#The position of the world temperature gauge relative to default
 	"World Temperature UI Offset" = [0, 0]
 	#Enables the world temperature gauge next to the hotbar

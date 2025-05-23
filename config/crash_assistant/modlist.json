@@ -15,10 +15,6 @@
     "modId": "aiimprovements",
     "version": "0.5.2"
   },
-  "AkashicTome-1.7-27.jar": {
-    "modId": "akashictome",
-    "version": "1.7-27"
-  },
   "alexsdelight-1.5.jar": {
     "modId": "alexsdelight",
     "version": "1.5"
@@ -66,6 +62,10 @@
   "ApothicCombat-1.20.1-1.1.0.jar": {
     "modId": "apothiccombat",
     "version": "1.1.0"
+  },
+  "ApothicCurios-1.20.1-1.0.3d.jar": {
+    "modId": "apothiccurios",
+    "version": "1.0.3d"
   },
   "appleskin-forge-mc1.20.1-2.5.1.jar": {
     "modId": "appleskin",
@@ -259,10 +259,6 @@
     "modId": "create_waystones_recipes",
     "version": "1.0.1.b"
   },
-  "create_winery-1.6.0-forge-1.20.1.jar": {
-    "modId": "create_winery",
-    "version": "1.6.0"
-  },
   "CreativeCore_FORGE_v2.12.32_mc1.20.1.jar": {
     "modId": "creativecore",
     "version": "2.12.32"
@@ -431,10 +427,6 @@
     "modId": "euphoria_patcher",
     "version": "1.6.3-r5.5.1-forge"
   },
-  "everycomp-1.20-2.8.5-forge.jar": {
-    "modId": "everycomp",
-    "version": "1.20-2.8.5"
-  },
   "explosiveenhancement-1.1.0-1.20.1-client-and-server.jar": {
     "modId": "explosiveenhancement",
     "version": "1.1.0"
@@ -487,9 +479,9 @@
     "modId": "ftbchunks_modded",
     "version": "1.1.9"
   },
-  "ftb-essentials-forge-2001.2.2.jar": {
+  "ftb-essentials-forge-2001.2.3.jar": {
     "modId": "ftbessentials",
-    "version": "2001.2.2"
+    "version": "2001.2.3"
   },
   "ftb-library-forge-2001.2.9.jar": {
     "modId": "ftblibrary",
@@ -638,6 +630,10 @@
   "jeiintegration_1.20.1-10.0.0.jar": {
     "modId": "jeiintegration",
     "version": "10.0.0"
+  },
+  "jeimultiblocks-1.20.1-1.0.4.jar": {
+    "modId": "jeimultiblocks",
+    "version": "1.0.4"
   },
   "justenoughbreeding-forge-1.20-1.20.1-1.5.0.jar": {
     "modId": "justenoughbreeding",
@@ -796,10 +792,6 @@
     "modId": "moonlight",
     "version": "1.20-2.14.1"
   },
-  "more-immersive-wires-1.20.1-1.1.4.jar": {
-    "modId": "more_immersive_wires",
-    "version": "1.1.4"
-  },
   "MouseTweaks-forge-mc1.20.1-2.25.1.jar": {
     "modId": "mousetweaks",
     "version": "2.25.1"
@@ -896,6 +888,10 @@
     "modId": "polylib",
     "version": "2000.0.3-build.143"
   },
+  "polymorph-forge-0.49.10+1.20.1.jar": {
+    "modId": "polymorph",
+    "version": "0.49.10+1.20.1"
+  },
   "portal_fluid-1.20.1-0.1.0-forge.jar": {
     "modId": "portal_fluid",
     "version": "1.20.1-0.1.0"
@@ -943,6 +939,10 @@
   "refinedcooking-4.0.0.jar": {
     "modId": "refinedcooking",
     "version": "4.0.0"
+  },
+  "refinedpolymorph-0.1.1-1.20.1.jar": {
+    "modId": "refinedpolymorph",
+    "version": "0.1.1-1.20.1"
   },
   "refinedstorage-1.12.4.jar": {
     "modId": "refinedstorage",
@@ -1052,9 +1052,9 @@
     "modId": "sophisticatedbackpackscreateintegration",
     "version": "0.1.2.8"
   },
-  "sophisticatedcore-1.20.1-1.2.60.987.jar": {
+  "sophisticatedcore-1.20.1-1.2.63.993.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.60.987"
+    "version": "1.2.63.993"
   },
   "sophisticatedstorage-1.20.1-1.3.44.1157.jar": {
     "modId": "sophisticatedstorage",
@@ -1087,10 +1087,6 @@
   "stardew_fishing-1.20.1-2.3.jar": {
     "modId": "stardew_fishing",
     "version": "2.3"
-  },
-  "stonezone-1.20-2.8.4.jar": {
-    "modId": "stonezone",
-    "version": "1.20-2.8.4"
   },
   "Stony Cliffs FML v1.1.2.jar": {
     "modId": "stonycliffs",
@@ -1180,7 +1176,7 @@
     "modId": "txnilib",
     "version": "1.0.24"
   },
-  "underground_rooms-1.9.3.jar": {
+  "underground_rooms-1.9.4.jar": {
     "modId": "underground_rooms",
     "version": "1.0-SNAPSHOT"
   },
