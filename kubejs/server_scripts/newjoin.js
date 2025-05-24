@@ -5,6 +5,7 @@
 // ────────────────────────────────────────────────
 // New player starter kits
 // ────────────────────────────────────────────────
+
 PlayerEvents.loggedIn(event => {
     const player = event.player;
 
@@ -26,16 +27,12 @@ PlayerEvents.loggedIn(event => {
 
         // Send welcome message
         player.tell([
-            '§l§6Welcome to the §cDragon Syndicate§6!',
-            '',
-            '§7This is a world of danger, dragons, and growing power.',
-            '§7You begin your journey on the §2Peaceful§7 difficulty stage.',
-            '',
-            '§eDifficulty stages§7 are key to unlocking your path forward.',
-            '§eProgress by completing quests.',
-            '',
-            '§bUse your §nquest book§b in the top left corner of your inventory.',
-            '',
+            '§l§6Welcome to the §cDragon Syndicate§6!\n\n',
+            '§7This is a world of danger, dragons, and growing power.\n',
+            '§7You begin your journey on the §2Peaceful§7 difficulty stage.\n',
+            '§eDifficulty stages§7 are key to unlocking your path forward.\n',
+            '§eProgress by completing quests.\n\n',
+            '§bUse your §nquest book§b in the top left corner of your inventory.\n\n',
             '§8Good luck, Syndicate Initiate. 🐉'
         ]);
     }

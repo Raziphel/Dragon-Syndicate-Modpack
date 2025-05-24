@@ -159,10 +159,6 @@
     "modId": "bwncr",
     "version": "3.17.2"
   },
-  "bygonenether-1.3.2-1.20.x.jar": {
-    "modId": "bygonenether",
-    "version": "1.3.2"
-  },
   "carryon-forge-1.20.1-2.1.2.7.jar": {
     "modId": "carryon",
     "version": "2.1.2.7"
@@ -664,6 +660,10 @@
     "modId": "kubejs",
     "version": "2001.6.5-build.16"
   },
+  "kubejsadditions-forge-4.3.4.jar": {
+    "modId": "kubejsadditions",
+    "version": "4.3.4"
+  },
   "largemeals-1.20.1-1.3.0.jar": {
     "modId": "largemeals",
     "version": "1.20.1-1.3.0"
@@ -852,9 +852,9 @@
     "modId": "packetfixer",
     "version": "2.0.0"
   },
-  "particular-1.20.1-Forge-1.2.1.jar": {
+  "particular-1.20.1-Forge-1.2.2.jar": {
     "modId": "particular",
-    "version": "1.2.1"
+    "version": "1.2.2"
   },
   "PassiveSkillTree-1.20.1-BETA-0.6.14a-all.jar": {
     "modId": "skilltree",
@@ -900,6 +900,10 @@
     "modId": "prism",
     "version": "1.0.5"
   },
+  "probejs-6.0.1-forge.jar": {
+    "modId": "probejs",
+    "version": "6.0.1"
+  },
   "PuzzlesLib-v8.1.32-1.20.1-Forge.jar": {
     "modId": "puzzleslib",
     "version": "8.1.32"
@@ -931,10 +935,6 @@
   "recipeessentials-1.20.1-4.0.jar": {
     "modId": "recipeessentials",
     "version": "1.20.1-4.0"
-  },
-  "redimstages-1.0.0.jar": {
-    "modId": "redimstages",
-    "version": "1.0.0"
   },
   "refinedcooking-4.0.0.jar": {
     "modId": "refinedcooking",

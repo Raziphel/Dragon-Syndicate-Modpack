@@ -1,30 +1,40 @@
 // Script by Raziphel
 // Join our Discord - discord.gg/razi
-// If you would like to join the development team!
+// Difficulty command tools for Dragon Syndicate
 
-// ────────────────────────────────────────────────
-// /advance_difficulty <player> (OPs & server only)
-// ────────────────────────────────────────────────
+ServerEvents.commandRegistry(event => {
+	const { commands: Commands, arguments: Arguments } = event
 
-const { player } = require('minecraft/server');
+	// /advance_difficulty <player>
+	event.register(
+		Commands.literal('advance_difficulty')
+			.requires(s => s.hasPermission(2))
+			.then(
+				Commands.argument('target', Arguments.PLAYER.create(event))
+					.executes(ctx => {
+						const player = Arguments.PLAYER.getResult(ctx, 'target');
+						advanceDifficulty(player);
+						ctx.source.sendSystemMessage(Component.green(`Advanced ${player.name.string} to the next difficulty.`));
+						return 1;
+					})
+			)
+	);
 
-ServerEvents.command(event => {
-    const { commands } = event;
+	// /get_difficulty <player>
+	event.register(
+		Commands.literal('get_difficulty')
+			.requires(s => s.hasPermission(2))
+			.then(
+				Commands.argument('target', Arguments.PLAYER.create(event))
+					.executes(ctx => {
+						const player = Arguments.PLAYER.getResult(ctx, 'target');
+						const currentStage = difficultyStages.find(stage => player.stages.has(stage)) || 'None';
+						const color = stageColors[currentStage] || '§7';
+						const name = capitalize(currentStage);
 
-    commands.literal("advance_difficulty")
-        .requires(src => src.hasPermission(2)) // Only OPs or the server can use it
-        .then(commands.argument("target", EntityArgument.player())
-            .executes(ctx => {
-                const target = EntityArgument.getPlayer(ctx, "target");
-
-                if (!target || !target.isPlayer()) {
-                    ctx.source.sendFailure("§cInvalid target.");
-                    return 0;
-                }
-
-                advanceDifficulty(target);
-                ctx.source.sendSuccess(`§aAdvanced §e${target.name} §ato the next difficulty.`);
-                return 1;
-            })
-        );
+						ctx.source.sendSystemMessage(Component.text(`${player.name.string} is currently on ${color}${name}§r difficulty.`));
+						return 1;
+					})
+			)
+	);
 });
