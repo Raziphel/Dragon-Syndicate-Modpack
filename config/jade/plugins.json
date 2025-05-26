@@ -1,4 +1,7 @@
 {
+  "framedblocks": {
+    "framed_item_frame": true
+  },
   "enderchests": {
     "hud": true
   },
@@ -77,6 +80,9 @@
   "immersiveengineering": {
     "multiblock_icon": true
   },
+  "createsifter": {
+    "sifter_data": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -129,6 +135,9 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "gravestone": {
+    "grave": true
   },
   "cookingforblockheads": {
     "fridge": true,

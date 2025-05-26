@@ -8,10 +8,6 @@
 	disable_gui: false
 	drop_book_on_death: false
 	drop_loot_crates: false
-	emergency_items: [{
-		Count: 1
-		id: "akashictome:tome"
-	}]
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	icon: {

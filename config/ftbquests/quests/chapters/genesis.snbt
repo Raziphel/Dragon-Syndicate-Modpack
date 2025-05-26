@@ -22,12 +22,13 @@
 			icon: "minecraft:grass_block"
 			id: "25BAE75AC9955CC8"
 			rewards: [{
-				id: "13ABC50EFF20169B"
-				item: "akashictome:tome"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "6766AB83700B9765"
+				table_id: 9159947626994735364L
+				type: "choice"
 			}]
-			shape: "octagon"
-			size: 3.0d
+			shape: "circle"
+			size: 2.0d
 			subtitle: "&6Welcome to Dragon Syndicate"
 			tasks: [{
 				id: "08F18DC6670FE106"
@@ -36,7 +37,7 @@
 			}]
 			title: "&6&lWelcome"
 			x: 0.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0021CF970A4FCC8E"]
@@ -62,8 +63,8 @@
 				type: "item"
 			}]
 			title: "&2Breaking Gravel"
-			x: 1.5d
-			y: 1.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["25BAE75AC9955CC8"]
@@ -88,7 +89,7 @@
 			}]
 			title: "&2Getting Sticks"
 			x: 2.0d
-			y: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5DE8376A2680C3D7"]
@@ -117,8 +118,8 @@
 				type: "item"
 			}]
 			title: "&2Getting Sharp"
-			x: 1.0d
-			y: 2.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1EAA14D5B64AE6CA"]
@@ -151,8 +152,8 @@
 				type: "item"
 			}]
 			title: "&2This is a Kno'ife"
-			x: 0.0d
-			y: 2.0d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2CBACD6D5ABB3F29"]
@@ -180,8 +181,8 @@
 				type: "item"
 			}]
 			title: "&2Back to the basics"
-			x: -1.5d
-			y: 1.0d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["189E61CEBB5F08FC"]
@@ -197,7 +198,8 @@
 				table_id: 9159947626994735364L
 				type: "random"
 			}]
-			shape: "rsquare"
+			shape: "circle"
+			size: 2.0d
 			subtitle: "Now get to it!"
 			tasks: [{
 				id: "1C5AC6046AA39E6C"
@@ -205,8 +207,8 @@
 				type: "item"
 			}]
 			title: "&2The Craft in Minecraft"
-			x: -2.0d
-			y: 0.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["681A04D6FA7FCC72"]
@@ -226,8 +228,8 @@
 				type: "item"
 			}]
 			title: "&2Getting Warmer"
-			x: -1.5d
-			y: -1.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["41CEAF7CD7049198"]
@@ -256,8 +258,8 @@
 				type: "item"
 			}]
 			title: "&2First Lap"
-			x: 3.5d
-			y: -3.5d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3674A3CABF6B3AE2"]
@@ -269,10 +271,11 @@
 				type: "item"
 			}]
 			title: "&2Gettin' String"
-			x: -1.0d
-			y: 2.0d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
+			dependencies: ["5087FE281C64511C"]
 			description: ["Time to get in the mine and get the usual stuff!"]
 			id: "41CEAF7CD7049198"
 			rewards: [{
@@ -290,69 +293,104 @@
 				type: "item"
 			}]
 			title: "&2Gettin' Raw!"
-			x: 2.5d
-			y: -3.5d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["277619AC1465CCD5"]
-			description: [
-				"Time to get what used to be the best material!"
-				""
-				"Remember that?"
-				""
-				"Good times... Good times..."
-			]
-			id: "26257835816BD832"
+			description: ["Time to kill some animals and get some leather!"]
+			id: "45F946DA8ECACEE9"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "73C9773C2764AED6"
+				id: "7753BD6EDF848FA9"
 				table_id: 9159947626994735364L
 				type: "random"
 			}]
 			shape: "rsquare"
-			subtitle: "A girl's best friend!"
+			subtitle: "Murder on my mind"
 			tasks: [{
-				id: "6C0FF8C3AF226375"
-				item: "minecraft:diamond"
+				count: 4L
+				id: "02B3DBDD592243DE"
+				item: { Count: 4, id: "minecraft:leather" }
 				type: "item"
 			}]
-			title: "&2Ooo Shiny"
-			x: 4.5d
-			y: -3.5d
+			title: "&2I NEED TO KILL"
+			x: 6.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["26257835816BD832"]
+			dependencies: ["45F946DA8ECACEE9"]
 			description: [
-				"With this you can mine almost anything!"
+				"You're gonna really want to get a backpack, trust me!"
 				""
-				"Except like... Some stuff..."
+				"The extra space it provides is good to get early."
 			]
-			id: "389BDAD93B9D6284"
+			id: "20882779EA81D6CC"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "4A32ED9635F6A48B"
+				id: "63BC53CE3B19B6E7"
 				table_id: 8198282079149878763L
 				type: "loot"
 			}]
 			shape: "rsquare"
-			subtitle: "Now you can truly mine!"
+			subtitle: "Backpack Backpack"
 			tasks: [{
-				id: "315A52BF37097988"
+				id: "65D6111D2C579794"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "&2Extra Space"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["74A784AFD782EEF6"]
+			id: "3CFCFB709606D7EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6090AD68C2BD7F7B"
+				table_id: 8198282079149878763L
+				type: "loot"
+			}]
+			shape: "circle"
+			size: 2.0d
+			tasks: [{
+				id: "16B2C49296E30B01"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			title: "Getting some tables!"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["20882779EA81D6CC"]
+			id: "74A784AFD782EEF6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F33380BB5519D2B"
+				table_id: 8198282079149878763L
+				type: "loot"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "27CFA5BAC88BED6F"
 				item: {
 					Count: 1
-					id: "minecraft:diamond_pickaxe"
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "thirst_nomore:drinking_helmet"
 					tag: {
 						Damage: 0
-						affix_data: {
-							sockets: 0
-						}
 					}
 				}
 				type: "item"
 			}]
-			title: "&2Better Tools"
-			x: 5.5d
-			y: -3.5d
+			x: 6.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Getting Started!"]

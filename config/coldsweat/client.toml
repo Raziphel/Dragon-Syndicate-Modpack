@@ -29,7 +29,7 @@
 	#Enables the body temperature readout above the hotbar
 	"Show Body Temperature Readout" = false
 	#The position of the world temperature gauge relative to default
-	"World Temperature UI Offset" = [0, 0]
+	"World Temperature UI Offset" = [60, 0]
 	#Enables the world temperature gauge next to the hotbar
 	"Show World Temperature Gauge" = true
 
