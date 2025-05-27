@@ -3,7 +3,7 @@
 // If you would like to join the development team!
 
 // ────────────────────────────────────────────────
-// Difficulty Core & Global Utilities
+// Difficulty Core & Globals
 // ────────────────────────────────────────────────
 
 // Global difficulty stage order
@@ -32,6 +32,7 @@ global.stageColors = {
 
 // Capitalize helper
 global.capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+
 
 
 // Check if player is at or beyond a certain stage
@@ -110,21 +111,6 @@ PlayerEvents.loggedIn(event => {
         AStages.addStageToPlayer(currentStage, player);
     }
 
-    if (!AStages.playerHasStage('first_joined', player)) {
-        AStages.addStageToPlayer('first_joined', player);
-
-        player.tell([
-            '§l§6Welcome to the §cDragon Syndicate§6!\n',
-            '§7This is a world of danger, dragons, and growing power.\n',
-            `§7You begin your journey on ${global.stageColors[currentStage] ?? '§2'}${global.capitalize(currentStage)}§7 difficulty.\n`,
-            '§eDifficulty stages§7 are key to unlocking your path forward.\n',
-            '§eProgress by completing quests.\n\n',
-            '§bUse your §nquest book§b in the top left corner of your inventory.\n',
-            '§8Good luck, Syndicate Initiate. 🐉'
-        ]);
-    } else {
-        player.tell(`§l§7You are currently on ${global.stageColors[currentStage]}${global.capitalize(currentStage)} §7difficulty.`);
-    }
-
+    player.tell(`§l§7You are currently on ${global.stageColors[currentStage]}${global.capitalize(currentStage)} §7difficulty.`);
     global.updatePlayerRestrictions(player);
 });

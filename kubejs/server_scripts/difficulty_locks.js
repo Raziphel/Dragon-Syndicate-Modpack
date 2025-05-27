@@ -10,7 +10,7 @@ global.blockLocks = [
     { id: 'minecraft:diamond_ore', stage: 'normal', reason: 'mine diamonds' },
     { id: 'minecraft:deepslate_diamond_ore', stage: 'normal', reason: 'mine diamonds' },
     { id: 'minecraft:obsidian', stage: 'hard', reason: 'mine obsidian' },
-    { id: 'minecraft:crying_obsidian', stage: 'hard', reason: 'mine obsidian' },
+    { id: 'minecraft:crying_obsidian', stage: 'hard', reason: 'mine obsidian' }
 ];
 
 global.recipeLocks = {
@@ -25,8 +25,41 @@ global.modRecipeLocks = {
     'hexerei': 'hard'
 };
 
+global.armorLocks = [
+    { id: 'minecraft:diamond_helmet', stage: 'hard' },
+    { id: 'minecraft:diamond_chestplate', stage: 'hard' },
+    { id: 'minecraft:diamond_leggings', stage: 'hard' },
+    { id: 'minecraft:diamond_boots', stage: 'hard' }
+];
 
-/// ────────────────────────────────────────────────
+global.oreLocks = [
+    { id: 'minecraft:diamond_ore', stage: 'normal' },
+    { id: 'minecraft:deepslate_diamond_ore', stage: 'normal' },
+    { id: 'minecraft:ancient_debris', stage: 'normal' }
+];
+
+global.dimensionLocks = [
+    { id: 'minecraft:the_nether', stage: 'hard' },
+    { id: 'minecraft:the_end', stage: 'nightmare' }
+];
+
+
+// ────────────────────────────────────────────────
+// Utility Requirements (must exist from core script)
+// ────────────────────────────────────────────────
+
+if (!global.isStageOrAbove) {
+    console.error("[🔥 KubeJS] Missing global.isStageOrAbove! Did you forget to load core?");
+}
+
+if (!global.tellLock) {
+    global.tellLock = (player, stage, reason) => {
+        player.tell(`§cYou must reach ${stage} to ${reason}.`);
+        player.runCommandSilent("playsound minecraft:block.note_block.bass master @s");
+    };
+}
+
+// ────────────────────────────────────────────────
 // Block Breaking Restrictions
 // ────────────────────────────────────────────────
 
@@ -37,25 +70,23 @@ BlockEvents.broken(event => {
     if (!player || !player.isPlayer() || player.isCreative()) return;
 
     const id = block.id;
-    const match = global.blockLocks?.find(lock => lock.id === id);
+    const match = global.blockLocks.find(lock => lock.id === id);
 
     if (match && !global.isStageOrAbove(player, match.stage)) {
         global.tellLock(player, match.stage, match.reason);
         event.cancel();
-        block.set(id);
+        block.set(id); // Reset block visually
     }
 });
-
 
 // ────────────────────────────────────────────────
 // Static AStages Restrictions
 // ────────────────────────────────────────────────
-
 ServerEvents.loaded(() => {
     console.log("[🔒 AStages] Registering difficulty-based restrictions...");
 
-    // Lock entire mods' item access
-    for (const [modId, stage] of Object.entries(global.modRecipeLocks || {})) {
+    // Mod item restrictions
+    for (const [modId, stage] of Object.entries(global.modRecipeLocks)) {
         const restrictionId = `astages/item_mod_${modId}`;
         AStages.addRestrictionForMod(restrictionId, stage, modId)
             .setCanPickedUp(false)
@@ -63,29 +94,40 @@ ServerEvents.loaded(() => {
             .setCanBeEquipped(false)
             .setCanBePlaced(false)
             .setHideTooltip(true)
-            .setRenderItemName(false);
+            .setRenderItemName(false)
+            .setPickupMessage(function(stack) {
+                const player = stack.player || (typeof stack.getOwner === 'function' ? stack.getOwner() : null);
+                if (player) global.tellLock(player, stage, `pick up items from ${modId}`);
+                return Component.empty();
+            });
     }
 
-    // Lock specific armor
-    AStages.addRestrictionForArmor("astages/armor_diamond", "hard",
-        "minecraft:diamond_helmet",
-        "minecraft:diamond_chestplate",
-        "minecraft:diamond_leggings",
-        "minecraft:diamond_boots"
-    ).setCanBeEquipped(false)
-     .setDropMessage(stack => Component.literal(`§cYou are not yet worthy to wear ${stack.getHoverName().string}`));
+    // Armor restrictions
+    AStages.addRestrictionForArmor(
+        "astages/armor_diamond",
+        "hard",
+        ...global.armorLocks.map(lock => lock.id)
+    )
+    .setCanBeEquipped(false)
+    .setDropMessage(function(stack) {
+        return Component.literal("§cYou are not yet worthy to wear " + stack.getHoverName().string);
+    });
 
-    // Lock specific ores
-    AStages.addRestrictionForItem("astages/locked_ores", "normal",
-        "minecraft:diamond_ore",
-        "minecraft:deepslate_diamond_ore",
-        "minecraft:ancient_debris"
-    ).setCanBeDig(false)
-     .setMineMessage(stack => Component.literal("§cYou lack the strength to mine this!"));
+    // Ore restrictions
+    AStages.addRestrictionForItem(
+        "astages/locked_ores",
+        "normal",
+        ...global.oreLocks.map(ore => ore.id)
+    )
+    .setCanBeDig(false)
+    .setMineMessage(function(stack) {
+        return Component.literal("§cYou lack the strength to mine this!");
+    });
 
-    // Lock dimensions
-    AStages.addRestrictionForDimension("astages/nether", "hard", "minecraft:the_nether");
-    AStages.addRestrictionForDimension("astages/end", "nightmare", "minecraft:the_end");
+    // Dimension restrictions
+    for (const dim of global.dimensionLocks) {
+        AStages.addRestrictionForDimension(`astages/dimension_${dim.id.replace(':', '_')}`, dim.stage, dim.id);
+    }
 });
 
 
@@ -93,15 +135,19 @@ ServerEvents.loaded(() => {
 // Dynamic Player Restriction Updates
 // ────────────────────────────────────────────────
 
-global.updatePlayerRestrictions = (player) => {
-    for (const [modId, stage] of Object.entries(global.modRecipeLocks || {})) {
+global.updatePlayerRestrictions = function(player) {
+    for (const [modId, stage] of Object.entries(global.modRecipeLocks)) {
         const restrictionId = `astages/item_mod_${modId}`;
         const restriction = AStages.getRestrictionById('mod', restrictionId);
         if (!restriction) continue;
 
         const hasStage = AStages.playerHasStage(stage, player);
+
         restriction.setHideTooltip(!hasStage, player);
         restriction.setRenderItemName(hasStage, player);
         restriction.setCanPickedUp(hasStage, player);
+        restriction.setCanBeStoredInInventory(hasStage, player);
+        restriction.setCanBeEquipped(hasStage, player);
+        restriction.setCanBePlaced(hasStage, player);
     }
 };
