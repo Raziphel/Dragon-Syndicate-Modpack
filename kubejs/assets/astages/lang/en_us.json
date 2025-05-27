@@ -1,0 +1,30 @@
+{
+  "chat.astages.add": "§6[✦] §aStage §e%s §ahas been unlocked!",
+  "chat.astages.info.has_stages": "§7Stages unlocked by §e%s§7:",
+  "chat.astages.info.list_item": "§8- §b%s",
+  "chat.astages.info.no_stages": "§cNo stages unlocked for player §e%s§c.",
+  "chat.astages.not_present": "§cStage §e%s §cis not unlocked.",
+  "chat.astages.remove": "§6[✗] §cStage §e%s §chas been removed.",
+  "chat.astages.remove_all": "§6[✗] §cAll stages removed from player.",
+  
+  "config.jade.plugin_astages.block_component_provider": "astages",
+
+  "message.astages.attach": "§cYou are not trained to wield the §6%s§c yet.",
+  "message.astages.breed": "§cYou lack the instincts to breed §6%s§c.",
+  "message.astages.dimension": "§4You feel a powerful force blocking your entry...",
+  "message.astages.drop": "§7You dropped the forbidden §e%s§7.",
+  "message.astages.mine": "§cYou are not strong enough to mine the §6%s§c.",
+  "message.astages.mount": "§cYou can’t control the wild spirit of §6%s§c.",
+  "message.astages.pickup": "§cThe §6%s§c slips from your grasp.",
+  "message.astages.place": "§cYou don’t understand how to place the §6%s§c.",
+  "message.astages.screen": "§cThis interface is locked by your current progress.",
+  "message.astages.tame": "§cThe §6%s§c doesn’t recognize your authority.",
+  "message.astages.use": "§cYou are not yet worthy to use the §6%s§c.",
+
+  "title.astages.add": "§6✦ §aStage §e%s §aUnlocked! §6✦",
+
+  "tooltip.astages.hidden_name": "§8Unknown Artifact",
+  "tooltip.astages.item_description": "§7Bound to §6[%s]§7 progression",
+  "tooltip.astages.jade_integration.block": "§8Unknown Structure",
+  "tooltip.astages.jade_integration.item": "§8Unknown Artifact"
+}

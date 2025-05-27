@@ -1,40 +1,91 @@
 // Script by Raziphel
 // Join our Discord - discord.gg/razi
-// Difficulty command tools for Dragon Syndicate
+// Rhino-safe difficulty command tools for Dragon Syndicate
 
-ServerEvents.commandRegistry(event => {
-	const { commands: Commands, arguments: Arguments } = event
+ServerEvents.commandRegistry(function(event) {
+    var Commands = event.commands;
+    var Arguments = event.arguments;
 
-	// /advance_difficulty <player>
-	event.register(
-		Commands.literal('advance_difficulty')
-			.requires(s => s.hasPermission(2))
-			.then(
-				Commands.argument('target', Arguments.PLAYER.create(event))
-					.executes(ctx => {
-						const player = Arguments.PLAYER.getResult(ctx, 'target');
-						advanceDifficulty(player);
-						ctx.source.sendSystemMessage(Component.green(`Advanced ${player.name.string} to the next difficulty.`));
-						return 1;
-					})
-			)
-	);
+    // /advance_difficulty <player>
+    event.register(
+        Commands.literal("advance_difficulty")
+            .requires(function(source) { return source.hasPermission(2); })
+            .then(
+                Commands.argument("target", Arguments.PLAYER.create(event))
+                    .executes(function(ctx) {
+                        var player = Arguments.PLAYER.getResult(ctx, "target");
+                        if (typeof global.advanceDifficulty === "function") {
+                            global.advanceDifficulty(player);
+                            ctx.source.sendSystemMessage("§aAdvanced §e" + player.name.string + " §ato the next difficulty.");
+                        } else {
+                            ctx.source.sendSystemMessage("§cadvanceDifficulty function not defined.");
+                        }
+                        return 1;
+                    })
+            )
+    );
 
-	// /get_difficulty <player>
-	event.register(
-		Commands.literal('get_difficulty')
-			.requires(s => s.hasPermission(2))
-			.then(
-				Commands.argument('target', Arguments.PLAYER.create(event))
-					.executes(ctx => {
-						const player = Arguments.PLAYER.getResult(ctx, 'target');
-						const currentStage = difficultyStages.find(stage => player.stages.has(stage)) || 'None';
-						const color = stageColors[currentStage] || '§7';
-						const name = capitalize(currentStage);
+    // /get_difficulty <player>
+    event.register(
+        Commands.literal("get_difficulty")
+            .requires(function(source) { return true; }) // All players allowed
+            .then(
+                Commands.argument("target", Arguments.PLAYER.create(event))
+                    .executes(function(ctx) {
+                        var player = Arguments.PLAYER.getResult(ctx, "target");
+                        var stage = "None";
+                        for (var i = 0; i < global.difficultyStages.length; i++) {
+                            if (AStages.playerHasStage(global.difficultyStages[i], player)) {
+                                stage = global.difficultyStages[i];
+                                break;
+                            }
+                        }
 
-						ctx.source.sendSystemMessage(Component.text(`${player.name.string} is currently on ${color}${name}§r difficulty.`));
-						return 1;
-					})
-			)
-	);
+                        var color = global.stageColors[stage] || "§7";
+                        var name = global.capitalize ? global.capitalize(stage) : stage;
+
+                        ctx.source.sendSystemMessage("§e" + player.name.string + " §7is currently on " + color + name + "§7 difficulty.");
+                        return 1;
+                    })
+            )
+    );
+
+    // /set_difficulty <player> <stage>
+    event.register(
+        Commands.literal("set_difficulty")
+            .requires(function(source) { return source.hasPermission(2); })
+            .then(
+                Commands.argument("target", Arguments.PLAYER.create(event))
+                    .then(
+                        Commands.argument("stage", Arguments.STRING.create(event))
+                            .executes(function(ctx) {
+                                var player = Arguments.PLAYER.getResult(ctx, "target");
+                                var stage = Arguments.STRING.getResult(ctx, "stage");
+
+                                if (global.difficultyStages.indexOf(stage) === -1) {
+                                    ctx.source.sendSystemMessage("§c'" + stage + "' is not a valid difficulty stage.");
+                                    return 0;
+                                }
+
+                                for (var i = 0; i < global.difficultyStages.length; i++) {
+                                    AStages.removeStageFromPlayer(global.difficultyStages[i], player);
+                                }
+
+                                AStages.addStageToPlayer(stage, player);
+
+                                var color = global.stageColors[stage] || "§f";
+                                var name = global.capitalize ? global.capitalize(stage) : stage;
+
+                                player.tell("§aYour difficulty has been set to " + color + name + "§r.");
+                                ctx.source.sendSystemMessage("§aSet §e" + player.name.string + "§a's difficulty to " + color + name + "§r.");
+
+                                if (global.updatePlayerRestrictions) {
+                                    global.updatePlayerRestrictions(player);
+                                }
+
+                                return 1;
+                            })
+                    )
+            )
+    );
 });

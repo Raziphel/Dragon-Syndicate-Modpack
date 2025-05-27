@@ -6,8 +6,6 @@
 // Stage Achieve Titles
 // ────────────────────────────────────────────────
 
-
-
 AStages.customizeStage('peaceful')
     .setAddTitle('§2New Difficulty Unlocked') 
     .setAddSubTitle('§7You have entered §2Peaceful §7difficulty')
