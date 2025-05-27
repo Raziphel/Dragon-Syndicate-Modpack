@@ -9,84 +9,41 @@
 PlayerEvents.loggedIn(event => {
     const player = event.player;
 
-    const tome = Item.of('akashictome:tome', {
-    "akashictome:is_morphing": 1.0,
+const tome = Item.of('akashictome:tome', {
+    "akashictome:is_morphing": 1,
     "akashictome:data": {
         "hexerei": {
-        "id": "hexerei:book_of_shadows",
-        "Count": 1.0,
-        "tag": {
-            "bookmarks": {},
-            "chapter": 0.0,
-            "akashictome:displayName": {
-            "text": '{"translate":"item.hexerei.book_of_shadows"}'
-            },
-            "akashictome:is_morphing": 1.0,
+        id: "hexerei:book_of_shadows",
+        Count: 1,
+        tag: {
+            "akashictome:is_morphing": 1,
             "display": {
-            "Name": '{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.hexerei.book_of_shadows"}]}'
-            },
-            "opened": 0.0,
-            "page": 0.0
+            "Name": {
+                "translate": "akashictome.sudo_name",
+                "with": [
+                {
+                    "color": "green",
+                    "translate": "item.hexerei.book_of_shadows"
+                }
+                ]
+            }
+            }
         }
         },
         "botania": {
-        "id": "botania:lexicon",
-        "Count": 1
-        },
-        "simplyswords": {
-        "id": "patchouli:guide_book",
-        "Count": 1,
-        "tag": {
-            "patchouli:book": "simplyswords:runic_grimoire"
-        }
-        },
-        "enderio": {
-        "id": "patchouli:guide_book",
-        "Count": 1.0,
-        "tag": {
-            "akashictome:displayName": {
-            "text": '{"translate":"guidebook.enderio.book_title"}'
-            },
-            "patchouli:book": "enderio:guide",
-            "akashictome:is_morphing": 1.0,
-            "display": {
-            "Name": '{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"guidebook.enderio.book_title"}]}'
-            }
-        }
-        },
-        "cookingforblockheads_0": {
-        "id": "cookingforblockheads:recipe_book",
-        "Count": 1.0,
-        "tag": {
-            "akashictome:definedMod": "cookingforblockheads_0"
-        }
+        id: "botania:lexicon",
+        Count: 1
         },
         "psi": {
-        "id": "patchouli:guide_book",
-        "Count": 1,
-        "tag": {
+        id: "patchouli:guide_book",
+        Count: 1,
+        tag: {
             "patchouli:book": "psi:encyclopaedia_psionica"
-        }
-        },
-        "cookingforblockheads": {
-        "id": "cookingforblockheads:crafting_book",
-        "Count": 1.0
-        },
-        "aether": {
-        "id": "aether:book_of_lore",
-        "Count": 1.0,
-        "tag": {
-            "akashictome:displayName": {
-            "text": '{"translate":"item.aether.book_of_lore"}'
-            },
-            "akashictome:is_morphing": 1.0,
-            "display": {
-            "Name": '{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.aether.book_of_lore"}]}'
-            }
         }
         }
     }
-    });
+});
+
 
 
     // Check if the player has already joined before (stage marker)
