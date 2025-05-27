@@ -26,8 +26,8 @@ global.modRecipeLocks = {
 };
 
 
-// ────────────────────────────────────────────────
-// Block Breaking Lock Event
+/// ────────────────────────────────────────────────
+// Block Breaking Restrictions
 // ────────────────────────────────────────────────
 
 BlockEvents.broken(event => {
@@ -37,7 +37,7 @@ BlockEvents.broken(event => {
     if (!player || !player.isPlayer() || player.isCreative()) return;
 
     const id = block.id;
-    const match = global.blockLocks.find(lock => lock.id === id);
+    const match = global.blockLocks?.find(lock => lock.id === id);
 
     if (match && !global.isStageOrAbove(player, match.stage)) {
         global.tellLock(player, match.stage, match.reason);
@@ -48,13 +48,15 @@ BlockEvents.broken(event => {
 
 
 // ────────────────────────────────────────────────
-// AStages Item Restriction Registration
+// Static AStages Restrictions
 // ────────────────────────────────────────────────
 
 ServerEvents.loaded(() => {
-    for (const [modId, stage] of Object.entries(global.modRecipeLocks)) {
-        const restrictionId = `astages/item_mod_${modId}`;
+    console.log("[🔒 AStages] Registering difficulty-based restrictions...");
 
+    // Lock entire mods' item access
+    for (const [modId, stage] of Object.entries(global.modRecipeLocks || {})) {
+        const restrictionId = `astages/item_mod_${modId}`;
         AStages.addRestrictionForMod(restrictionId, stage, modId)
             .setCanPickedUp(false)
             .setCanBeStoredInInventory(false)
@@ -63,14 +65,43 @@ ServerEvents.loaded(() => {
             .setHideTooltip(true)
             .setRenderItemName(false);
     }
+
+    // Lock specific armor
+    AStages.addRestrictionForArmor("astages/armor_diamond", "hard",
+        "minecraft:diamond_helmet",
+        "minecraft:diamond_chestplate",
+        "minecraft:diamond_leggings",
+        "minecraft:diamond_boots"
+    ).setCanBeEquipped(false)
+     .setDropMessage(stack => Component.literal(`§cYou are not yet worthy to wear ${stack.getHoverName().string}`));
+
+    // Lock specific ores
+    AStages.addRestrictionForItem("astages/locked_ores", "normal",
+        "minecraft:diamond_ore",
+        "minecraft:deepslate_diamond_ore",
+        "minecraft:ancient_debris"
+    ).setCanBeDig(false)
+     .setMineMessage(stack => Component.literal("§cYou lack the strength to mine this!"));
+
+    // Lock dimensions
+    AStages.addRestrictionForDimension("astages/nether", "hard", "minecraft:the_nether");
+    AStages.addRestrictionForDimension("astages/end", "nightmare", "minecraft:the_end");
 });
 
 
 // ────────────────────────────────────────────────
-// Dynamic Player Restriction Updates (Login Sync)
+// Dynamic Player Restriction Updates
 // ────────────────────────────────────────────────
 
-PlayerEvents.loggedIn(event => {
-    const player = event.player;
-    global.updatePlayerRestrictions(player);
-});
+global.updatePlayerRestrictions = (player) => {
+    for (const [modId, stage] of Object.entries(global.modRecipeLocks || {})) {
+        const restrictionId = `astages/item_mod_${modId}`;
+        const restriction = AStages.getRestrictionById('mod', restrictionId);
+        if (!restriction) continue;
+
+        const hasStage = AStages.playerHasStage(stage, player);
+        restriction.setHideTooltip(!hasStage, player);
+        restriction.setRenderItemName(hasStage, player);
+        restriction.setCanPickedUp(hasStage, player);
+    }
+};
