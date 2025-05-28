@@ -13,5 +13,3 @@ config - KubeJS config storage. This is also the only directory that scripts can
 exported - Data dumps like texture atlases end up here
 
 You can find type-specific logs in logs/kubejs/ directory
-
-Seed I want to use: 5238503648512897228

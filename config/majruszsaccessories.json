@@ -233,7 +233,7 @@
     },
     "lucky_rock": {
       "extra_mining_item": {
-        "chance": 0.03,
+        "chance": 0.01,
         "chance_range": {
           "min": 0.0,
           "max": 1.0
@@ -244,7 +244,7 @@
           "minecraft:the_nether": "majruszsaccessories:gameplay/lucky_rock_nether"
         }
       },
-      "mining_drop_chance": 7.5E-4
+      "mining_drop_chance": 1.5E-4
     },
     "metal_lure": {
       "extra_fishing_treasure": {

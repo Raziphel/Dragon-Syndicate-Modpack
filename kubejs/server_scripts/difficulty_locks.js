@@ -12,12 +12,12 @@ global.modLocks = {
 };
 
 global.itemLocks = [
-    { id: 'minecraft:diamond_ore', stage: 'normal', reason: 'mine diamonds' },
-    { id: 'minecraft:deepslate_diamond_ore', stage: 'normal', reason: 'mine diamonds' },
-    { id: 'minecraft:obsidian', stage: 'hard', reason: 'mine obsidian' },
-    { id: 'minecraft:crying_obsidian', stage: 'hard', reason: 'mine obsidian' },
-    { id: 'minecraft:ancient_debris', stage: 'hard', reason: 'mine ancient debris' },
-    { id: 'minecraft:netherite_block', stage: 'hard', reason: 'mine netherite' }
+    { id: 'minecraft:diamond_ore', stage: 'normal' },
+    { id: 'minecraft:deepslate_diamond_ore', stage: 'normal' },
+    { id: 'minecraft:obsidian', stage: 'hard' },
+    { id: 'minecraft:crying_obsidian', stage: 'hard' },
+    { id: 'minecraft:ancient_debris', stage: 'hard' },
+    { id: 'minecraft:netherite_block', stage: 'hard' }
 ];
 
 global.dimensionLocks = [
@@ -27,18 +27,10 @@ global.dimensionLocks = [
     { id: 'minecraft:the_end', stage: 'nightmare' }
 ];
 
-// ────────────────────────────────────────────────
-// Utils
-// ────────────────────────────────────────────────
 
-if (!global.tellLock) {
-    global.tellLock = function(player, stage, reason) {
-        var color = global.stageColors?.[stage] || '§f';
-        var name = global.capitalize ? global.capitalize(stage) : stage;
-        player.tell(`§cYou must reach ${color}${name} §cdifficulty to ${reason}.`);
-        player.runCommandSilent("playsound minecraft:block.note_block.bass master @s");
-    };
-}
+global.structureLocks = [
+    { id: 'integrated_stronghold:stronghold', stage: 'nightmare' },
+];
 
 // ────────────────────────────────────────────────
 // AStages: Register Mod Restrictions
@@ -78,7 +70,7 @@ for (var i = 0; i < global.itemLocks.length; i++) {
         .setHideTooltip(true)
         .setCanItemBeLeftClicked(false)
         .setCanItemBeRightClicked(false)
-        .setHideInJEI(true) 
+        .setHideInJEI(true)
         .setRenderItemName(false);
 }
 
@@ -89,4 +81,23 @@ for (var i = 0; i < global.itemLocks.length; i++) {
 for (var j = 0; j < global.dimensionLocks.length; j++) {
     var dim = global.dimensionLocks[j];
     AStages.addRestrictionForDimension("astages/dimension_" + dim.id.replace(":", "_"), dim.stage, dim.id);
+}
+
+// ────────────────────────────────────────────────
+// AStages: Structure Destruction Locks
+// ────────────────────────────────────────────────
+
+
+for (var k = 0; k < global.structureLocks.length; k++) {
+    var structure = global.structureLocks[k];
+    var restrictionId = `astages/${structure.id.replace(":", "/")}`;
+
+    AStages.addRestrictionForStructure(restrictionId, structure.stage, structure.id)
+        .setCanAttackEntities(true)
+        .setCanInteract(true)
+        .setCanBlockBePlaced(false)
+        .setCanBlockBeBroken(false)
+        .setMakeExplosionsAffectBlocks(false)
+        .setMakeExplosionsAffectEntities(true)
+        .addAllowedBreakableBlocks('grass','dirt','stone','deepslate',"tuff","grass_block","limestone","diorite","andesite")
 }

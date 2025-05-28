@@ -365,6 +365,7 @@
 		}
 		{
 			dependencies: ["20882779EA81D6CC"]
+			description: ["This is probably important, all ya need to do is stick a water bottle in a furnace!"]
 			id: "74A784AFD782EEF6"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -373,22 +374,20 @@
 				type: "loot"
 			}]
 			shape: "rsquare"
+			subtitle: "Probably important"
 			tasks: [{
+				count: 3L
 				id: "27CFA5BAC88BED6F"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
-						}
-					}
-					id: "thirst_nomore:drinking_helmet"
+					id: "minecraft:potion"
 					tag: {
-						Damage: 0
+						Potion: "minecraft:water"
 					}
 				}
 				type: "item"
 			}]
+			title: "&2Get some clean water"
 			x: 6.5d
 			y: 2.0d
 		}
