@@ -4,6 +4,6 @@
 	"enableWeaponFootfalls": true,
 	"enablePassiveParticles": true,
 	"enableUniqueGemSockets": true,
-	"compatGobberEndWeaponsUnbreakable": true,
+	"compatGobberEndWeaponsUnbreakable": false,
 	"compatEnableSpellPowerScaling": true
 }

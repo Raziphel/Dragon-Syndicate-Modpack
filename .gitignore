@@ -34,3 +34,6 @@ _*
 /rhino.local.properties
 /.qmenu_opened.marker
 /Distant_Horizons_server_data
+/servers.dat
+/servers.dat_old
+/user-prefs.json

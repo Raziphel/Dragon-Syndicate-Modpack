@@ -63,6 +63,10 @@
     "modId": "apotheosis",
     "version": "7.4.8"
   },
+  "ApotheoticAdditionsV2.2.2.jar": {
+    "modId": "apotheotic_additions",
+    "version": "2.2.2"
+  },
   "Apothic Amendments - Enchanting - 0.1.4.jar": {
     "modId": "apothic_amendments__enchanting",
     "version": "0.1.4"
@@ -295,10 +299,6 @@
     "modId": "comforts",
     "version": "6.4.0+1.20.1"
   },
-  "compactmachines-forge-6.0.3.jar": {
-    "modId": "compactmachines",
-    "version": "6.0.3"
-  },
   "connectivity-1.20.1-7.1.jar": {
     "modId": "connectivity",
     "version": "1.20.1-7.1"
@@ -326,6 +326,10 @@
   "create-1.20.1-6.0.4.jar": {
     "modId": "create",
     "version": "6.0.4"
+  },
+  "create-food-1.20.1-1.1.11-forge.jar": {
+    "modId": "createfood",
+    "version": "1.1.11-forge"
   },
   "create-new-age-forge-1.20.1-1.1.4.jar": {
     "modId": "create_new_age",
@@ -426,14 +430,6 @@
   "dynview-1.20.1-4.0.jar": {
     "modId": "dynview",
     "version": "2.3"
-  },
-  "easy-piglins-forge-1.20.1-1.0.13.jar": {
-    "modId": "easy_piglins",
-    "version": "1.20.1-1.0.13"
-  },
-  "easy-villagers-forge-1.20.1-1.1.23.jar": {
-    "modId": "easy_villagers",
-    "version": "1.20.1-1.1.23"
   },
   "EasyAnvils-v8.0.2-1.20.1-Forge.jar": {
     "modId": "easyanvils",
@@ -1104,6 +1100,10 @@
     "modId": "skilltree",
     "version": "0.6.14a"
   },
+  "passiveskilltreeadditions-1.1.1.jar": {
+    "modId": "passiveskilltreeadditions",
+    "version": "1.1.1"
+  },
   "Patchouli-1.20.1-84.1-FORGE.jar": {
     "modId": "patchouli",
     "version": "1.20.1-84.1-FORGE"
@@ -1259,10 +1259,6 @@
   "Shrines-1.20.1-6.0.2.jar": {
     "modId": "shrines",
     "version": "1.20.1-6.0.2"
-  },
-  "Shrink-1.20.1-1.4.5.jar": {
-    "modId": "shrink",
-    "version": "1.4.5"
   },
   "SimpleDiscordRichPresence-forge-4.0.3-build.40+mc1.20.1.jar": {
     "modId": "sdrp",

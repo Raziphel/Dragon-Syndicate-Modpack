@@ -6,9 +6,14 @@
 // New player starter kits + AStages integration
 // ────────────────────────────────────────────────
 
-PlayerEvents.loggedIn(function(event) {
+PlayerEvents.loggedIn(event => {
     const player = event.player;
 
+    // Safety fallbacks in case these aren't initialized
+    if (!global.difficultyStages) global.difficultyStages = ['peaceful', 'normal', 'hard'];
+    if (!global.stageColors) global.stageColors = { peaceful: '§a', normal: '§e', hard: '§c' };
+
+    // Define Akashic Tome
     const tome = Item.of('akashictome:tome', {
         "akashictome:is_morphing": 1.0,
         "akashictome:data": {
@@ -25,10 +30,7 @@ PlayerEvents.loggedIn(function(event) {
                     }
                 }
             },
-            powah: {
-                id: "powah:book",
-                Count: 1
-            },
+            powah: { id: "powah:book", Count: 1 },
             simplyswords: {
                 id: "patchouli:guide_book",
                 Count: 1,
@@ -44,10 +46,7 @@ PlayerEvents.loggedIn(function(event) {
                 Count: 1,
                 tag: { "patchouli:book": "psi:encyclopaedia_psionica" }
             },
-            immersiveengineering: {
-                id: "immersiveengineering:manual",
-                Count: 1
-            },
+            immersiveengineering: { id: "immersiveengineering:manual", Count: 1 },
             apotheosis: {
                 id: "patchouli:guide_book",
                 Count: 1,
@@ -58,14 +57,8 @@ PlayerEvents.loggedIn(function(event) {
                 Count: 1,
                 tag: { "patchouli:book": "twilightdelight:twilight_guide" }
             },
-            luminous_butterflies: {
-                id: "luminous_butterflies:butterfly_encyclopedia",
-                Count: 1
-            },
-            botania: {
-                id: "botania:lexicon",
-                Count: 1
-            },
+            luminous_butterflies: { id: "luminous_butterflies:butterfly_encyclopedia", Count: 1 },
+            botania: { id: "botania:lexicon", Count: 1 },
             enderio: {
                 id: "patchouli:guide_book",
                 Count: 1,
@@ -76,10 +69,7 @@ PlayerEvents.loggedIn(function(event) {
                 Count: 1,
                 tag: { "akashictome:definedMod": "cookingforblockheads_0" }
             },
-            cookingforblockheads: {
-                id: "cookingforblockheads:crafting_book",
-                Count: 1
-            },
+            cookingforblockheads: { id: "cookingforblockheads:crafting_book", Count: 1 },
             bloodmagic: {
                 id: "patchouli:guide_book",
                 Count: 1,
@@ -88,62 +78,70 @@ PlayerEvents.loggedIn(function(event) {
         }
     });
 
+    // Check if this is their first time
+    const isFirstJoin = !AStages.playerHasStage('first_joined', player);
 
-    // Add peaceful stage if they have no difficulty yet
-    let hasStage = false;
+    // If no difficulty stage, set to peaceful
+    let hasDifficulty = false;
     for (let i = 0; i < global.difficultyStages.length; i++) {
         if (AStages.playerHasStage(global.difficultyStages[i], player)) {
-            hasStage = true;
+            hasDifficulty = true;
             break;
         }
     }
 
-    if (!hasStage) {
-        AStages.addStageToPlayer("peaceful", player);
+    if (!hasDifficulty) {
+        AStages.addStageToPlayer('peaceful', player);
     }
 
-    const currentStage = global.difficultyStages.find(function(stage) {
-        return AStages.playerHasStage(stage, player);
-    }) || "peaceful";
+    // Determine current difficulty stage
+    let currentStage = 'peaceful';
+    for (let i = 0; i < global.difficultyStages.length; i++) {
+        if (AStages.playerHasStage(global.difficultyStages[i], player)) {
+            currentStage = global.difficultyStages[i];
+            break;
+        }
+    }
 
-    // First-time join setup
-    if (!AStages.playerHasStage("first_joined", player)) {
+    // Get stage color + capitalized name safely
+    let stageColor = '§f';
+    if (global.stageColors && global.stageColors[currentStage]) {
+        stageColor = global.stageColors[currentStage];
+    }
+
+    let stageName = currentStage;
+    if (typeof global.capitalize === 'function') {
+        stageName = global.capitalize(currentStage);
+    }
+
+    // Only give starter kit on first join
+    if (isFirstJoin) {
+        AStages.addStageToPlayer('first_joined', player);
+
+        // Starter armor
         event.entity.setItemSlot(5, 'majruszsdifficulty:tattered_helmet');
         event.entity.setItemSlot(4, 'majruszsdifficulty:tattered_chestplate');
         event.entity.setItemSlot(3, 'majruszsdifficulty:tattered_leggings');
         event.entity.setItemSlot(2, 'majruszsdifficulty:tattered_boots');
 
-
-        const unwanted = Item.of('patchouli:guide_book', { "patchouli:book": "simplyswords:runic_grimoire" });
-        player.inventory.clearItem(unwanted);
-        player.give(tome);
-
-        // Optional starter items
-        // player.give('ftbquests:book');
-        // player.give('kubejs:gold_coin', 10);
-
-        AStages.addStageToPlayer("first_joined", player);
-
-        const color = global.stageColors[currentStage] || '§f';
-        const name = global.capitalize(currentStage);
-
+        // Welcome message
         player.tell([
             '§l§6Welcome to the §cDragon Syndicate§6!\n\n',
             '§7This is a world of danger, dragons, and growing power.\n',
-            `§7You begin your journey on ${color}${name}§7 difficulty.\n`,
+            '§7You begin your journey on ' + stageColor + stageName + '§7 difficulty.\n',
             '§eDifficulty stages§7 are key to unlocking your path forward.\n',
             '§eProgress by completing quests.\n\n',
             '§bUse your §nquest book§b in the top left corner of your inventory.\n',
             '§8Good luck, Syndicate Initiate. 🐉'
         ]);
-    } else {
-        const color = global.stageColors[currentStage] || '§f';
-        const name = global.capitalize(currentStage);
-        player.tell(`§l§7You are currently on ${color}${name} §7difficulty.`);
-    }
 
-    // Reapply any restriction logic
-    if (global.updatePlayerRestrictions) {
-        global.updatePlayerRestrictions(player);
+        // Replace existing guide book with custom tome
+        const unwanted = Item.of('patchouli:guide_book', { "patchouli:book": "simplyswords:runic_grimoire" });
+        player.give(tome);
+        player.inventory.clearItem(unwanted);
+
+    } else {
+        // Show current stage if not first join
+        player.tell('§l§7You are currently on ' + stageColor + stageName + ' §7difficulty.');
     }
 });

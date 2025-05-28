@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "genesis"
-	group: ""
+	group: "0E2729CE3DC6BA1D"
 	icon: "minecraft:gravel"
 	id: "12AD1CF25713B936"
 	order_index: 0
@@ -192,12 +192,20 @@
 				"You've gotten past what normally takes 6 seconds in the base game!"
 			]
 			id: "681A04D6FA7FCC72"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "40650FDD3395108E"
-				table_id: 9159947626994735364L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "40650FDD3395108E"
+					table_id: 9159947626994735364L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "53BE206F9EFC4BBB"
+					table_id: 8198282079149878763L
+					type: "loot"
+				}
+			]
 			shape: "circle"
 			size: 2.0d
 			subtitle: "Now get to it!"
@@ -263,8 +271,20 @@
 		}
 		{
 			dependencies: ["3674A3CABF6B3AE2"]
+			description: [
+				"Making a substitute for string is super easy!"
+				""
+				"Just cut some grass with your knife!"
+			]
 			id: "2CBACD6D5ABB3F29"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "538640D293619E0A"
+				table_id: 8198282079149878763L
+				type: "loot"
+			}]
 			shape: "rsquare"
+			subtitle: "Planty-y String"
 			tasks: [{
 				id: "37A718BDE83FCFA0"
 				item: "notreepunching:plant_string"
@@ -345,6 +365,11 @@
 		}
 		{
 			dependencies: ["74A784AFD782EEF6"]
+			description: [
+				"1 furnace just won't cut it!  Go ahead and create a Jumbo Furnace!"
+				""
+				"Simply place a 3x3 cube of furnaces! (27 furnaces in total)"
+			]
 			id: "3CFCFB709606D7EE"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -354,12 +379,14 @@
 			}]
 			shape: "circle"
 			size: 2.0d
+			subtitle: "This bad boy COOKS!"
 			tasks: [{
-				id: "16B2C49296E30B01"
-				item: "minecraft:smithing_table"
-				type: "item"
+				advancement: "jumbofurnace:assemble_jumbo_furnace"
+				criterion: ""
+				id: "6F553204CFC746B6"
+				type: "advancement"
 			}]
-			title: "Getting some tables!"
+			title: "&2Jumbo Furnace"
 			x: 6.0d
 			y: 4.0d
 		}

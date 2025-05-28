@@ -29,7 +29,7 @@
   "message.astages.item.pickup": "§7The %s refuses your grasp.",
   "message.astages.item.place": "§7You do not yet know how to place the %s.",
   "message.astages.item.use": "§7The secrets of the %s elude you.",
-  "message.astages.mob": "§8An unknown presence watches you...",
+  "message.astages.mob": "§cAn unknown presence watches you...",
   "message.astages.pet.breed": "§7You lack the knowledge to breed %s.",
   "message.astages.pet.mount": "§7You are not bonded with %s.",
   "message.astages.pet.tame": "§7Your spirit is not strong enough to tame %s.",
@@ -41,8 +41,8 @@
   "message.astages.structure.interact": "§cYou cannot interact with %s.",
   "message.astages.structure.place": "§cYou cannot place blocks within %s.",
   "title.astages.add": "§6Stage §e%s §6Unlocked!",
-  "tooltip.astages.item.hidden_name": "§8Mysterious Item",
+  "tooltip.astages.item.hidden_name": "§CMysterious Item",
   "tooltip.astages.item.item_description": "§7Bound to the §e%s §7stage",
-  "tooltip.astages.item.jade_integration.block": "§8Unknown Block",
-  "tooltip.astages.item.jade_integration.item": "§8Unknown Item"
+  "tooltip.astages.item.jade_integration.block": "§cUnfamiliar Block",
+  "tooltip.astages.item.jade_integration.item": "§cUnfamiliar Item"
 }
