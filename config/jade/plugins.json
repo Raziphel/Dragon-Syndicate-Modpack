@@ -57,9 +57,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "compactmachines": {
-    "machine": true,
-    "tunnel": true
+  "midnight": {
+    "traditional_age": true,
+    "nightstag": true
   },
   "jadeaddons.create": {
     "filter": true,
@@ -103,6 +103,10 @@
   "balm": {
     "jade": true
   },
+  "tesseract": {
+    "tesseract": true,
+    "remove_default": true
+  },
   "cslcrops": {
     "temp_data": true
   },
@@ -116,11 +120,6 @@
     "hud.rgb16": true,
     "hud": true,
     "hud.redstone": true
-  },
-  "easy_villagers": {
-    "villager": true,
-    "converter": true,
-    "breeder": true
   },
   "delightful": {
     "crop_progress": true,

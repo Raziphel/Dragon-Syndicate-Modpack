@@ -355,6 +355,10 @@
     "modId": "create_waystones_recipes",
     "version": "1.0.1.b"
   },
+  "createcobblestone-1.4.5+forge-1.20.1-106.jar": {
+    "modId": "createcobblestone",
+    "version": "1.4.5+forge-1.20.1-106"
+  },
   "createoreexcavation-1.20-1.6.3.jar": {
     "modId": "createoreexcavation",
     "version": "1.6.3"
@@ -370,6 +374,10 @@
   "cristellib-1.1.6-forge.jar": {
     "modId": "cristellib",
     "version": "1.1.6"
+  },
+  "crittersandcompanions-forge-2.2.2.jar": {
+    "modId": "crittersandcompanions",
+    "version": "2.2.2"
   },
   "cslcrops-1.2.jar": {
     "modId": "cslcrops",
@@ -434,6 +442,10 @@
   "EasyAnvils-v8.0.2-1.20.1-Forge.jar": {
     "modId": "easyanvils",
     "version": "8.0.2"
+  },
+  "eatinganimation-1.20.1-5.1.0.jar": {
+    "modId": "eatinganimation",
+    "version": "5.1.0"
   },
   "ElysiumAPI-1.20.1-1.1.2.jar": {
     "modId": "elysium_api",
@@ -659,6 +671,7 @@
     "modId": "glitchcore",
     "version": "0.0.1.1"
   },
+  "gml-4.0.11-all.jar": {},
   "gpumemleakfix-1.20.1-1.8.jar": {
     "modId": "gpumemleakfix",
     "version": "1.20.1-1.8"
@@ -678,6 +691,10 @@
   "hexerei-0.4.2.3.jar": {
     "modId": "hexerei",
     "version": "1.20.1-0.4.2.3"
+  },
+  "hexxit_additions-1.0.1-forge-1.20.1.jar": {
+    "modId": "hexxit_additions",
+    "version": "1.0.1"
   },
   "iceandfire-2.1.13-1.20.1-beta-5.jar": {
     "modId": "iceandfire",
@@ -848,6 +865,10 @@
     "modId": "legendarytooltips",
     "version": "1.4.5"
   },
+  "LibX-1.20.1-5.0.12.jar": {
+    "modId": "libx",
+    "version": "1.20.1-5.0.12"
+  },
   "limitedchunks-1.20.1-4.1.jar": {
     "modId": "limitedchunks",
     "version": "1.8"
@@ -876,6 +897,10 @@
     "modId": "lost_aether_content",
     "version": "1.2.3"
   },
+  "lucent-1.20.1-1.5.5.jar": {
+    "modId": "lucent",
+    "version": "1.5.5"
+  },
   "Luminous Beasts V1.2.51 - Forge 1.20.1.jar": {
     "modId": "luminous_beasts",
     "version": "1.2.51"
@@ -896,9 +921,9 @@
     "modId": "luminous_nether",
     "version": "1.2.7"
   },
-  "Luminous V1.5.1 - Forge 1.20.1.jar": {
+  "Luminous V1.5.2 - Forge 1.20.1.jar": {
     "modId": "luminousworld",
-    "version": "1.5.1"
+    "version": "1.5.2"
   },
   "LuminousTag V1.1 - Forge 1.20.1.jar": {
     "modId": "luminoustag",
@@ -980,6 +1005,10 @@
     "modId": "memorysettings",
     "version": "1.20.1-5.9"
   },
+  "midnight-1.20.1-0.6.7.jar": {
+    "modId": "midnight",
+    "version": "0.6.7"
+  },
   "minecraft-cursor-forge-3.8.0+1.20.1.jar": {
     "modId": "minecraft_cursor",
     "version": "3.8.0+1.20.1"
@@ -1007,6 +1036,14 @@
   "MouseTweaks-forge-mc1.20.1-2.25.1.jar": {
     "modId": "mousetweaks",
     "version": "2.25.1"
+  },
+  "mowziesmobs-1.7.3.jar": {
+    "modId": "mowziesmobs",
+    "version": "1.7.3"
+  },
+  "MythicBotany-1.20.1-4.0.3.jar": {
+    "modId": "mythicbotany",
+    "version": "1.20.1-4.0.3"
   },
   "NaNny-1.0.1.jar": {
     "modId": "nanny",
@@ -1280,6 +1317,10 @@
     "modId": "sliceanddice",
     "version": "3.4.0"
   },
+  "SmartBrainLib-forge-1.20.1-1.15.jar": {
+    "modId": "smartbrainlib",
+    "version": "1.15"
+  },
   "smarterfarmers-1.20-2.1.2.jar": {
     "modId": "smarterfarmers",
     "version": "1.20-2.1.2"
@@ -1308,21 +1349,21 @@
     "modId": "sodiumoptionsmodcompat",
     "version": "1.0.0"
   },
-  "sophisticatedbackpacks-1.20.1-3.23.18.1247.jar": {
+  "sophisticatedbackpacks-1.20.1-3.23.19.1251.jar": {
     "modId": "sophisticatedbackpacks",
-    "version": "3.23.18.1247"
+    "version": "3.23.19.1251"
   },
   "sophisticatedbackpackscreateintegration-1.20.1-0.1.3.11.jar": {
     "modId": "sophisticatedbackpackscreateintegration",
     "version": "0.1.3.11"
   },
-  "sophisticatedcore-1.20.1-1.2.66.997.jar": {
+  "sophisticatedcore-1.20.1-1.2.68.1003.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.66.997"
+    "version": "1.2.68.1003"
   },
-  "sophisticatedstorage-1.20.1-1.3.46.1160.jar": {
+  "sophisticatedstorage-1.20.1-1.3.47.1163.jar": {
     "modId": "sophisticatedstorage",
-    "version": "1.3.46.1160"
+    "version": "1.3.47.1163"
   },
   "sophisticatedstoragecreateintegration-1.20.1-0.1.12.36.jar": {
     "modId": "sophisticatedstoragecreateintegration",
@@ -1351,6 +1392,10 @@
   "stardew_fishing-1.20.1-2.3.jar": {
     "modId": "stardew_fishing",
     "version": "2.3"
+  },
+  "stateobserver-forge-1.20.1-1.4.3.jar": {
+    "modId": "stateobserver",
+    "version": "1.4.3"
   },
   "Stony Cliffs FML v1.1.2.jar": {
     "modId": "stonycliffs",
@@ -1396,6 +1441,10 @@
     "modId": "terralith_restoned",
     "version": "1.2"
   },
+  "tesseract-1.0.37-forge-mc1.20.1.jar": {
+    "modId": "tesseract",
+    "version": "1.0.37"
+  },
   "TheOuterEnd-1.0.10.jar": {
     "modId": "outer_end",
     "version": "1.0.8"
@@ -1427,6 +1476,10 @@
   "Towns-and-Towers-1.12-Fabric+Forge.jar": {
     "modId": "t_and_t",
     "version": "1.10.2"
+  },
+  "trading_floor-forge-1.20.1-2.0.3.jar": {
+    "modId": "trading_floor",
+    "version": "2.0.3"
   },
   "TravelersTitles-1.20-Forge-4.0.2.jar": {
     "modId": "travelerstitles",

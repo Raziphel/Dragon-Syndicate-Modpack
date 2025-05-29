@@ -47,6 +47,8 @@
   "jadeaddons.create:table_cloth": null,
   "jadeaddons.lootr:info": null,
   "jadeaddons.lootr:inventory": null,
+  "midnight:nightstag": null,
+  "midnight:traditional_age": null,
   "minecraft:animal_owner": null,
   "minecraft:armor_stand": null,
   "minecraft:beehive": null,
@@ -94,6 +96,8 @@
   "supplementaries:hat_stand": null,
   "supplementaries:present": null,
   "supplementaries:safe": null,
+  "tesseract:remove_default": null,
+  "tesseract:tesseract": null,
   "twilightforest:quest_ram_wool": null,
   "waystones:waystone": null
 }

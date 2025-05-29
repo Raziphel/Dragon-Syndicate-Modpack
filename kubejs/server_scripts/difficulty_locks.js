@@ -6,9 +6,14 @@
 // ────────────────────────────────────────────────
 
 global.modLocks = {
+    'refinedstorage': 'normal',
+    'refinedstorageaddons': 'normal',
     'botania': 'hard',
+    'mythicbotany': 'hard',
     'hexerei': 'hard',
-    'overworld_netherite_ore': 'hard'
+    'overworld_netherite_ore': 'hard',
+    'iceandfire': 'brutal',
+    'iceandfire_curios': 'brutal',
 };
 
 global.itemLocks = [
@@ -17,14 +22,14 @@ global.itemLocks = [
     { id: 'minecraft:obsidian', stage: 'hard' },
     { id: 'minecraft:crying_obsidian', stage: 'hard' },
     { id: 'minecraft:ancient_debris', stage: 'hard' },
-    { id: 'minecraft:netherite_block', stage: 'hard' }
+    { id: 'minecraft:netherite_block', stage: 'hard' },
 ];
 
 global.dimensionLocks = [
     { id: 'twilightforest:twilight_forest', stage: 'normal' },
     { id: 'minecraft:the_nether', stage: 'hard' },
     { id: 'aether:aether', stage: 'brutal' },
-    { id: 'minecraft:the_end', stage: 'nightmare' }
+    { id: 'minecraft:the_end', stage: 'nightmare' },
 ];
 
 

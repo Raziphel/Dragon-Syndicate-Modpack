@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "genesis"
 	group: "0E2729CE3DC6BA1D"
-	icon: "minecraft:gravel"
+	icon: "minecraft:grass_block"
 	id: "12AD1CF25713B936"
 	order_index: 0
 	quest_links: [ ]
@@ -420,5 +420,5 @@
 		}
 	]
 	subtitle: ["Getting Started!"]
-	title: "Genesis"
+	title: "Peaceful"
 }
