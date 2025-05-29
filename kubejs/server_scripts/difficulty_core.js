@@ -30,4 +30,6 @@ global.stageColors = {
     oblivion:   '§0'  // Black
 };
 
-// this is old stuff no longer used
+function capitalize(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1);
+}
