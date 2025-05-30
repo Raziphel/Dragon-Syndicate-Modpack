@@ -3,13 +3,13 @@
 [settings]
 	#At what level of Tipsy should the chat scramble?
 	#Range: 1 ~ 10
-	levelChatScramble = 3
+	levelChatScramble = 2
 	#At what level of Tipsy should signs scramble?
 	#Range: 1 ~ 10
 	levelSignScramble = 3
 	#At what level of Tipsy should nametags scramble?
 	#Range: 1 ~ 10
-	levelNameScramble = 3
+	levelNameScramble = 4
 
 	#Keg
 	[settings.keg]
@@ -36,5 +36,5 @@
 	#Recipe book
 	[settings.recipe_book]
 		#Should the Keg have a Recipe Book available on its interface?
-		enableRecipeBookKeg = true
+		enableRecipeBookKeg = false
 

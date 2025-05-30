@@ -3,77 +3,78 @@
     "is_per_player_difficulty_enabled": true,
     "list": [
       {
-        "id": "normal",
-        "format": [
-          "WHITE"
-        ],
-        "triggers": {
-          "dimensions": [],
-          "entities": []
-        },
-        "messages": []
-      },
-      {
-        "id": "expert",
-        "format": [
-          "RED",
-          "BOLD"
-        ],
-        "triggers": {
-          "dimensions": [
-            "{regex}.*"
-          ],
-          "entities": []
-        },
+        "id": "peaceful",
+        "format": ["WHITE"],
+        "triggers": { "dimensions": [], "entities": [] },
         "messages": [
-          {
-            "id": "majruszsdifficulty.stages.expert.started",
-            "format": [
-              "RED",
-              "BOLD"
-            ]
-          },
-          {
-            "id": "majruszsdifficulty.undead_army.on_expert",
-            "format": [
-              "DARK_PURPLE"
-            ]
-          }
+          { "id": "majruszsdifficulty.stages.peaceful.started", "format": ["WHITE"] }
         ]
       },
       {
-        "id": "master",
-        "format": [
-          "DARK_PURPLE",
-          "BOLD"
-        ],
-        "triggers": {
-          "dimensions": [],
-          "entities": [
-            "minecraft:ender_dragon"
-          ]
-        },
+        "id": "easy",
+        "format": ["GREEN"],
+        "triggers": { "dimensions": [], "entities": [] },
         "messages": [
-          {
-            "id": "majruszsdifficulty.stages.master.started",
-            "format": [
-              "DARK_PURPLE",
-              "BOLD"
-            ]
-          },
-          {
-            "id": "majruszsdifficulty.undead_army.on_master",
-            "format": [
-              "DARK_PURPLE"
-            ]
-          }
+          { "id": "majruszsdifficulty.stages.easy.started", "format": ["GREEN"] }
+        ]
+      },
+      {
+        "id": "normal",
+        "format": ["YELLOW"],
+        "triggers": { "dimensions": [], "entities": [] },
+        "messages": [
+          { "id": "majruszsdifficulty.stages.normal.started", "format": ["YELLOW"] }
+        ]
+      },
+      {
+        "id": "hard",
+        "format": ["GOLD", "BOLD"],
+        "triggers": { "dimensions": [], "entities": [] },
+        "messages": [
+          { "id": "majruszsdifficulty.stages.hard.started", "format": ["GOLD", "BOLD"] }
+        ]
+      },
+      {
+        "id": "brutal",
+        "format": ["RED", "BOLD"],
+        "triggers": { "dimensions": [], "entities": [] },
+        "messages": [
+          { "id": "majruszsdifficulty.stages.brutal.started", "format": ["RED", "BOLD"] }
+        ]
+      },
+      {
+        "id": "nightmare",
+        "format": ["DARK_PURPLE", "BOLD"],
+        "triggers": { "dimensions": [], "entities": [] },
+        "messages": [
+          { "id": "majruszsdifficulty.stages.nightmare.started", "format": ["DARK_PURPLE", "BOLD"] }
+        ]
+      },
+      {
+        "id": "torment",
+        "format": ["DARK_RED", "BOLD"],
+        "triggers": { "dimensions": [], "entities": [] },
+        "messages": [
+          { "id": "majruszsdifficulty.stages.torment.started", "format": ["DARK_RED", "BOLD"] }
+        ]
+      },
+      {
+        "id": "oblivion",
+        "format": ["BLACK", "BOLD"],
+        "triggers": { "dimensions": [], "entities": [] },
+        "messages": [
+          { "id": "majruszsdifficulty.stages.oblivion.started", "format": ["BLACK", "BOLD"] }
         ]
       }
     ],
     "crd_penalty": {
       "__default": 0.0,
-      "expert": 0.15,
-      "master": 0.3
+      "normal": 0.05,
+      "hard": 0.1,
+      "brutal": 0.15,
+      "nightmare": 0.25,
+      "torment": 0.35,
+      "oblivion": 0.5
     }
   },
   "features": {
@@ -83,59 +84,42 @@
     },
     "creeper_chain_reaction": {
       "is_enabled": true,
-      "required_game_stage": "expert"
+      "required_game_stage": "hard"
     },
     "creeper_explode_behind_wall": {
       "is_enabled": true,
-      "required_game_stage": "expert",
+      "required_game_stage": "hard",
       "chance": 1.0,
       "is_scaled_by_crd": false
     },
     "creeper_explosion_immunity": {
       "is_enabled": true,
-      "required_game_stage": "expert",
+      "required_game_stage": "brutal",
       "damage_multiplier": 0.2
     },
     "creeper_spawn_charged": {
       "is_enabled": true,
-      "required_game_stage": "normal",
-      "chance": 0.125,
+      "required_game_stage": "nightmare",
+      "chance": 0.2,
       "is_scaled_by_crd": true
     },
     "creeper_spawn_debuffed": {
       "is_enabled": true,
-      "required_game_stage": "normal",
+      "required_game_stage": "easy",
       "chance": 0.375,
       "is_scaled_by_crd": true,
       "effects": [
-        {
-          "id": "minecraft:weakness",
-          "amplifier": 0,
-          "duration": 60.0
-        },
-        {
-          "id": "minecraft:slowness",
-          "amplifier": 0,
-          "duration": 60.0
-        },
-        {
-          "id": "minecraft:mining_fatigue",
-          "amplifier": 0,
-          "duration": 60.0
-        },
-        {
-          "id": "minecraft:saturation",
-          "amplifier": 0,
-          "duration": 60.0
-        }
+        { "id": "minecraft:weakness", "amplifier": 0, "duration": 60.0 },
+        { "id": "minecraft:slowness", "amplifier": 0, "duration": 60.0 },
       ]
     },
     "creeper_split_into_creeperlings": {
       "is_enabled": true,
+      "required_game_stage": "torment",
       "count": {
         "__default": 2,
-        "expert": 4,
-        "master": 6
+        "torment": 4,
+        "oblivion": 6
       },
       "chance": 0.666,
       "is_scaled_by_crd": true
@@ -151,8 +135,8 @@
       "is_enabled": true,
       "chance": {
         "__default": 0.0,
-        "expert": 0.05,
-        "master": 0.1
+        "brutal": 0.05,
+        "oblivion": 0.1
       },
       "blacklisted_items": [
         "minecraft:nether_star",
@@ -161,13 +145,13 @@
     },
     "drowned_lightning_bolt": {
       "is_enabled": true,
-      "required_game_stage": "expert",
+      "required_game_stage": "nightmare",
       "chance": 1.0,
       "is_scaled_by_crd": false
     },
     "enderman_teleport_attack": {
       "is_enabled": true,
-      "required_game_stage": "master",
+      "required_game_stage": "brutal",
       "chance": 0.5,
       "is_scaled_by_crd": true
     },
@@ -181,217 +165,78 @@
       "is_enabled": true,
       "extra_multiplier": {
         "__default": 0.0,
-        "expert": 0.2,
-        "master": 0.4
+        "brutal": 0.2,
+        "oblivion": 0.4
       }
     },
     "jockey_spawn": {
       "is_enabled": true,
-      "required_game_stage": "expert",
+      "required_game_stage": "brutal",
       "chance": 0.125,
       "is_scaled_by_crd": false
     },
-    "mob_groups": {
-      "piglins": {
-        "required_game_stage": "expert",
-        "chance": 0.25,
-        "is_scaled_by_crd": true,
-        "leader_types": [
-          {
-            "type": "minecraft:piglin",
-            "equipment": "majruszsdifficulty:mob_groups/piglin_leader"
-          }
-        ],
-        "sidekicks_count": {
-          "min": 1,
-          "max": 3
-        },
-        "sidekick_types": [
-          {
-            "type": "minecraft:piglin",
-            "equipment": "majruszsdifficulty:mob_groups/piglin_sidekick"
-          }
-        ]
-      },
-      "skeletons": {
-        "required_game_stage": "normal",
-        "chance": 0.1,
-        "is_scaled_by_crd": true,
-        "leader_types": [
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:mob_groups/skeleton_leader"
-          }
-        ],
-        "sidekicks_count": {
-          "min": 1,
-          "max": 3
-        },
-        "sidekick_types": [
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:mob_groups/skeleton_sidekick"
-          }
-        ]
-      },
-      "undead": {
-        "required_game_stage": "normal",
-        "chance": 0.1,
-        "is_scaled_by_crd": true,
-        "leader_types": [
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton"
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton"
-          },
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob"
-          },
-          {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob"
-          }
-        ],
-        "sidekicks_count": {
-          "min": 2,
-          "max": 4
-        },
-        "sidekick_types": [
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
-          },
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
-          },
-          {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
-          }
-        ]
-      },
-      "zombie_miners": {
-        "required_game_stage": "expert",
-        "chance": 0.25,
-        "is_scaled_by_crd": true,
-        "leader_types": [
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:mob_groups/zombie_leader"
-          }
-        ],
-        "sidekicks_count": {
-          "min": 1,
-          "max": 3
-        },
-        "sidekick_types": [
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:mob_groups/zombie_sidekick"
-          }
-        ]
-      }
-    },
     "mobs_apply_effects": [
       {
-        "required_game_stage": "expert",
-        "chance": 0.25,
+        "required_game_stage": "normal",
+        "chance": 0.5,
         "is_scaled_by_crd": true,
         "entity_type": "minecraft:spider",
-        "effect": {
-          "id": "minecraft:poison",
-          "amplifier": 0,
-          "duration": 7.0
-        }
+        "effect": { "id": "minecraft:poison", "amplifier": 0, "duration": 7.0 }
       },
       {
-        "required_game_stage": "expert",
+        "required_game_stage": "hard",
         "chance": 0.5,
         "is_scaled_by_crd": true,
         "entity_type": "minecraft:slime",
-        "effect": {
-          "id": "minecraft:slowness",
-          "amplifier": 0,
-          "duration": 7.0
-        }
+        "effect": { "id": "minecraft:slowness", "amplifier": 0, "duration": 7.0 }
       },
       {
-        "required_game_stage": "master",
+        "required_game_stage": "torment",
+        "chance": 0.5,
+        "is_scaled_by_crd": true,
+        "entity_type": "minecraft:phantom",
+        "effect": { "id": "minecraft:levitation", "amplifier": 0, "duration": 7.0 }
+      },
+      {
+        "required_game_stage": "oblivion",
         "chance": 0.5,
         "is_scaled_by_crd": true,
         "entity_type": "minecraft:shulker",
-        "effect": {
-          "id": "minecraft:blindness",
-          "amplifier": 0,
-          "duration": 7.0
-        }
-      },
-      {
-        "required_game_stage": "master",
-        "chance": 0.75,
-        "is_scaled_by_crd": true,
-        "entity_type": "minecraft:phantom",
-        "effect": {
-          "id": "minecraft:levitation",
-          "amplifier": 0,
-          "duration": 7.0
-        }
+        "effect": { "id": "minecraft:blindness", "amplifier": 0, "duration": 7.0 }
       }
     ],
     "mobs_spawn_stronger": {
       "is_enabled": true,
       "health_bonus": {
         "__default": 0.3,
-        "expert": 1.0,
-        "master": 2.5
+        "brutal": 1.0,
+        "oblivion": 2.5
       },
       "damage_bonus": {
         "__default": 0.0,
-        "expert": 0.5,
-        "master": 1.5
+        "brutal": 0.5,
+        "oblivion": 1.5
       },
       "excluded_mobs": []
     },
     "pillager_with_fireworks": {
       "is_enabled": true,
-      "required_game_stage": "master",
+      "required_game_stage": "torment",
       "chance": 0.15,
       "is_scaled_by_crd": true,
       "crossbow_multishot_chance": 0.25,
       "firework_drop_chance": 0.25,
       "firework_count": 8
     },
-    "spawn_blocker": {
-      "forbidden_entities": {
-        "__default": [
-          "majruszsdifficulty:illusioner",
-          "majruszsdifficulty:tank",
-          "majruszsdifficulty:cerberus"
-        ],
-        "expert": [
-          "majruszsdifficulty:cerberus"
-        ],
-        "master": []
-      }
-    },
     "spawn_killer_bunny": {
       "is_enabled": true,
-      "required_game_stage": "expert",
+      "required_game_stage": "brutal",
       "chance": 0.1,
       "is_scaled_by_crd": true
     },
     "spawn_player_zombie": {
       "is_enabled": true,
-      "required_game_stage": "expert",
+      "required_game_stage": "torment",
       "chance": 1.0,
       "is_scaled_by_crd": false,
       "head_chance": 1.0,
@@ -400,9 +245,15 @@
     "spawn_rate_increaser": {
       "is_enabled": true,
       "multiplier": {
-        "__default": 1.0,
-        "expert": 1.2,
-        "master": 1.5
+        "__default": 0.0,
+        "peaceful": 0.0,
+        "easy": 0.2,
+        "normal": 0.5,
+        "hard": 1.0,
+        "brutal": 1.25,
+        "nightmare": 1.5,
+        "torment": 1.75,
+        "oblivion": 2.0
       }
     }
   },
@@ -426,223 +277,91 @@
     "waves": [
       {
         "mobs": [
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
-          },
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
-          }
+          { "type": "minecraft:zombie", "equipment": "majruszsdifficulty:undead_army/wave_1_mob", "count": 3 },
+          { "type": "minecraft:skeleton", "equipment": "majruszsdifficulty:undead_army/wave_1_skeleton", "count": 3 },
+          { "type": "minecraft:husk", "equipment": "majruszsdifficulty:undead_army/wave_1_mob", "count": 2 },
+          { "type": "minecraft:stray", "equipment": "majruszsdifficulty:undead_army/wave_1_skeleton", "count": 2 },
+          { "type": "minecraft:wither_skeleton", "equipment": "majruszsdifficulty:undead_army/wave_1_wither_skeleton", "count": 2 }
         ],
-        "game_stage": "normal",
-        "exp": 8
-      },
-      {
-        "mobs": [
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 2
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 3
-          },
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 3
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 2
-          }
-        ],
-        "game_stage": "normal",
-        "exp": 16
-      },
-      {
-        "mobs": [
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
-            "count": 3
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
-            "count": 3
-          },
-          {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
-            "count": 3
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
-            "count": 3
-          }
-        ],
-        "boss": {
-          "type": "majruszsdifficulty:tank",
-          "count": 1
-        },
         "game_stage": "normal",
         "exp": 24
       },
       {
         "mobs": [
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 2
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
-            "count": 2
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
-          },
-          {
-            "type": "majruszsdifficulty:tank",
-            "count": 1
-          },
-          {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 3
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
-            "count": 3
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
-          }
+          { "type": "minecraft:zombie", "equipment": "majruszsdifficulty:undead_army/wave_2_mob", "count": 3 },
+          { "type": "minecraft:skeleton", "equipment": "majruszsdifficulty:undead_army/wave_2_skeleton", "count": 3 },
+          { "type": "minecraft:husk", "equipment": "majruszsdifficulty:undead_army/wave_2_mob", "count": 2 },
+          { "type": "minecraft:stray", "equipment": "majruszsdifficulty:undead_army/wave_2_skeleton", "count": 2 },
+          { "type": "minecraft:wither_skeleton", "equipment": "majruszsdifficulty:undead_army/wave_2_wither_skeleton", "count": 2 }
         ],
-        "game_stage": "expert",
+        "boss": {
+          "type": "majruszsdifficulty:tank",
+          "count": 1
+        },
+        "game_stage": "hard",
         "exp": 32
       },
       {
         "mobs": [
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 1
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 3
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 2
-          },
-          {
-            "type": "majruszsdifficulty:tank",
-            "count": 1
-          },
-          {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 3
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 2
-          }
+          { "type": "minecraft:zombie", "equipment": "majruszsdifficulty:undead_army/wave_3_mob", "count": 4 },
+          { "type": "minecraft:skeleton", "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton", "count": 4 },
+          { "type": "minecraft:husk", "equipment": "majruszsdifficulty:undead_army/wave_3_mob", "count": 2 },
+          { "type": "minecraft:stray", "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton", "count": 2 },
+          { "type": "minecraft:wither_skeleton", "equipment": "majruszsdifficulty:undead_army/wave_3_wither_skeleton", "count": 2 }
         ],
         "boss": {
           "type": "majruszsdifficulty:cerberus",
           "count": 1
         },
-        "game_stage": "expert",
+        "game_stage": "brutal",
         "exp": 40
       },
       {
         "mobs": [
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
-            "count": 1
-          },
-          {
-            "type": "majruszsdifficulty:tank",
-            "count": 1
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
-            "count": 1
-          },
-          {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_wither_skeleton",
-            "count": 1
-          },
-          {
-            "type": "majruszsdifficulty:cerberus",
-            "count": 1
-          }
+          { "type": "minecraft:zombie", "equipment": "majruszsdifficulty:undead_army/wave_4_mob", "count": 4 },
+          { "type": "minecraft:skeleton", "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton", "count": 4 },
+          { "type": "minecraft:husk", "equipment": "majruszsdifficulty:undead_army/wave_4_mob", "count": 2 },
+          { "type": "minecraft:stray", "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton", "count": 2 },
+          { "type": "minecraft:wither_skeleton", "equipment": "majruszsdifficulty:undead_army/wave_4_wither_skeleton", "count": 2 }
+        ],
+        "boss": {
+          "type": "majruszsdifficulty:cerberus",
+          "count": 1
+        },
+        "game_stage": "nightmare",
+        "exp": 48
+      },
+      {
+        "mobs": [
+          { "type": "minecraft:zombie", "equipment": "majruszsdifficulty:undead_army/wave_5_mob", "count": 5 },
+          { "type": "minecraft:skeleton", "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton", "count": 5 },
+          { "type": "minecraft:husk", "equipment": "majruszsdifficulty:undead_army/wave_5_mob", "count": 3 },
+          { "type": "minecraft:stray", "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton", "count": 3 },
+          { "type": "minecraft:wither_skeleton", "equipment": "majruszsdifficulty:undead_army/wave_5_wither_skeleton", "count": 3 }
+        ],
+        "boss": {
+          "type": "majruszsdifficulty:giant",
+          "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+          "count": 1
+        },
+        "game_stage": "torment",
+        "exp": 56
+      },
+      {
+        "mobs": [
+          { "type": "minecraft:zombie", "equipment": "majruszsdifficulty:undead_army/wave_6_mob", "count": 6 },
+          { "type": "minecraft:skeleton", "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton", "count": 6 },
+          { "type": "minecraft:husk", "equipment": "majruszsdifficulty:undead_army/wave_6_mob", "count": 3 },
+          { "type": "minecraft:stray", "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton", "count": 3 },
+          { "type": "minecraft:wither_skeleton", "equipment": "majruszsdifficulty:undead_army/wave_6_wither_skeleton", "count": 3 }
         ],
         "boss": {
           "type": "majruszsdifficulty:giant",
           "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
           "count": 1
         },
-        "game_stage": "master",
-        "exp": 48
+        "game_stage": "oblivion",
+        "exp": 64
       }
     ]
   },
