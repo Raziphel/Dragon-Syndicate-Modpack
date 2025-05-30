@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3CFCFB709606D7EE"]
+			dependencies: ["6A1B140001AF5DE2"]
 			description: [
 				"By checking this quest you will enter easy difficulty!"
 				""
@@ -190,17 +190,14 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"5D534A42C424610D"
-				"46BF7243CA852C70"
-			]
+			dependencies: ["56DA2088241F8689"]
 			id: "626B62C87A1B9F98"
 			tasks: [{
 				id: "21CB3DA773A5D898"
-				item: "magnumtorch:amethyst_magnum_torch"
+				item: "minecraft:smithing_table"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
@@ -215,6 +212,7 @@
 				id: "3DD8E6F9F1F9DD01"
 				type: "advancement"
 			}]
+			title: "&aMake a Coke Oven"
 			x: 0.0d
 			y: -3.5d
 		}
@@ -222,13 +220,54 @@
 			dependencies: ["03A33DA2B55DA958"]
 			id: "17C773C24E773B76"
 			tasks: [{
+				count: 16L
 				id: "0F554ADE480C210F"
-				item: "buildinggadgets2:gadget_building"
+				item: "immersiveengineering:ingot_aluminum"
 				type: "item"
 			}]
 			x: -0.5d
 			y: -4.5d
 		}
+		{
+			dependencies: ["03A33DA2B55DA958"]
+			id: "5FC76236A5A16E2F"
+			tasks: [{
+				count: 16L
+				id: "50F79F36CDC5B81E"
+				item: { Count: 16, id: "immersiveengineering:ingot_electrum" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["56DA2088241F8689"]
+			id: "2D98A57D929AC81A"
+			tasks: [{
+				advancement: "lootr:25loot"
+				criterion: ""
+				id: "21148A0F04740FD7"
+				title: "&eOpen 25 loot chests"
+				type: "advancement"
+			}]
+			title: "&aOpen 25 loot chests"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5D534A42C424610D"
+				"46BF7243CA852C70"
+			]
+			id: "56DA2088241F8689"
+			tasks: [{
+				id: "03A9C1C727525A27"
+				item: "cold_sweat:waterskin"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
 	]
-	title: "Easy"
+	title: "&aEasy"
 }

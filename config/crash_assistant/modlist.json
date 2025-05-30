@@ -147,9 +147,9 @@
     "modId": "badpackets",
     "version": "0.4.3"
   },
-  "balm-forge-1.20.1-7.3.30-all.jar": {
+  "balm-forge-1.20.1-7.3.31-all.jar": {
     "modId": "balm",
-    "version": "7.3.30"
+    "version": "7.3.31"
   },
   "BEB-Forge-1.20.1-4.0.0.jar": {
     "modId": "beb",
@@ -210,10 +210,6 @@
   "BrewinAndChewin-1.20.1-3.2.1.jar": {
     "modId": "brewinandchewin",
     "version": "1.20.1-3.2.1"
-  },
-  "BuildersDelight-1.20.1-v.1.3.jar": {
-    "modId": "buildersdelight",
-    "version": "1.2.1"
   },
   "buildinggadgets2-1.0.7.jar": {
     "modId": "buildinggadgets2",
@@ -351,6 +347,10 @@
     "modId": "create_refined_recipes",
     "version": "1.0.1.b"
   },
+  "create_ultimate_factory-2.1.0-forge-1.20.1.jar": {
+    "modId": "create_ultimate_factory",
+    "version": "2.1.0"
+  },
   "create_waystones_recipes-1.0.1.b.jar": {
     "modId": "create_waystones_recipes",
     "version": "1.0.1.b"
@@ -358,14 +358,6 @@
   "createcobblestone-1.4.5+forge-1.20.1-106.jar": {
     "modId": "createcobblestone",
     "version": "1.4.5+forge-1.20.1-106"
-  },
-  "createoreexcavation-1.20-1.6.3.jar": {
-    "modId": "createoreexcavation",
-    "version": "1.6.3"
-  },
-  "createsifter-1.20.1-1.8.4-6.0.3.jar": {
-    "modId": "createsifter",
-    "version": "1.20.1-1.8.3-6.0.2"
   },
   "CreativeCore_FORGE_v2.12.32_mc1.20.1.jar": {
     "modId": "creativecore",
@@ -447,9 +439,9 @@
     "modId": "eatinganimation",
     "version": "5.1.0"
   },
-  "ElysiumAPI-1.20.1-1.1.2.jar": {
+  "ElysiumAPI-1.20.1-1.1.3.jar": {
     "modId": "elysium_api",
-    "version": "1.1.2"
+    "version": "1.1.3"
   },
   "embeddium-0.3.31+mc1.20.1.jar": {
     "modId": "embeddium",
@@ -547,9 +539,9 @@
     "modId": "fancymenu",
     "version": "3.5.2"
   },
-  "FarmersDelight-1.20.1-1.2.7.jar": {
+  "FarmersDelight-1.20.1-1.2.8.jar": {
     "modId": "farmersdelight",
-    "version": "1.20.1-1.2.7"
+    "version": "1.20.1-1.2.8"
   },
   "farmersrespite-1.20.1-2.1.2.jar": {
     "modId": "farmersrespite",
@@ -772,9 +764,9 @@
     "modId": "jadeaddons",
     "version": "5.5.0+forge"
   },
-  "Jadens-Nether-Expansion-2.3.2.jar": {
+  "Jadens-Nether-Expansion-2.3.3.jar": {
     "modId": "netherexp",
-    "version": "2.3.2"
+    "version": "2.3.3"
   },
   "jadensnetherexpansiondelight-1.0.3-1.20.1-forge.jar": {
     "modId": "jadensnetherexpansiondelight",
@@ -1129,9 +1121,9 @@
     "modId": "particle_core",
     "version": "0.2.6+1.20.1+forge"
   },
-  "particular-1.20.1-Forge-1.2.2.jar": {
+  "particular-1.20.1-Forge-1.2.3.jar": {
     "modId": "particular",
-    "version": "1.2.2"
+    "version": "1.2.3"
   },
   "PassiveSkillTree-1.20.1-BETA-0.6.14a-all.jar": {
     "modId": "skilltree",
@@ -1321,6 +1313,10 @@
     "modId": "smartbrainlib",
     "version": "1.15"
   },
+  "smartcrafter-0.2.0.jar": {
+    "modId": "smartcrafter",
+    "version": "0.2.0"
+  },
   "smarterfarmers-1.20-2.1.2.jar": {
     "modId": "smarterfarmers",
     "version": "1.20-2.1.2"
@@ -1357,13 +1353,13 @@
     "modId": "sophisticatedbackpackscreateintegration",
     "version": "0.1.3.11"
   },
-  "sophisticatedcore-1.20.1-1.2.68.1003.jar": {
+  "sophisticatedcore-1.20.1-1.2.69.1005.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.68.1003"
+    "version": "1.2.69.1005"
   },
-  "sophisticatedstorage-1.20.1-1.3.47.1163.jar": {
+  "sophisticatedstorage-1.20.1-1.3.49.1167.jar": {
     "modId": "sophisticatedstorage",
-    "version": "1.3.47.1163"
+    "version": "1.3.49.1167"
   },
   "sophisticatedstoragecreateintegration-1.20.1-0.1.12.36.jar": {
     "modId": "sophisticatedstoragecreateintegration",
@@ -1440,10 +1436,6 @@
   "Terralith_ReStoned_v1.2.jar": {
     "modId": "terralith_restoned",
     "version": "1.2"
-  },
-  "tesseract-1.0.37-forge-mc1.20.1.jar": {
-    "modId": "tesseract",
-    "version": "1.0.37"
   },
   "TheOuterEnd-1.0.10.jar": {
     "modId": "outer_end",
@@ -1532,10 +1524,6 @@
   "watut-forge-1.20.1-1.2.3.jar": {
     "modId": "watut",
     "version": "1.20.1-1.2.3"
-  },
-  "waystoneandcreate.jar": {
-    "modId": "waystoneandcreate",
-    "version": "1.0.0"
   },
   "waystones-forge-1.20.1-14.1.13.jar": {
     "modId": "waystones",

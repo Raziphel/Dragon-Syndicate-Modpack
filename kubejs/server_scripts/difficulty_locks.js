@@ -46,8 +46,8 @@ for (var modId in global.modLocks) {
     var restrictionId = "astages/item_mod_" + modId;
 
     AStages.addRestrictionForMod(restrictionId, stage, modId)
-        .setCanPickedUp(false)
-        .setCanBeStoredInInventory(false)
+        .setCanPickedUp(true)
+        .setCanBeStoredInInventory(true)
         .setCanBeEquipped(false)
         .setCanBePlaced(false)
         .setCanBeDig(false)
@@ -59,6 +59,14 @@ for (var modId in global.modLocks) {
 }
 
 // ────────────────────────────────────────────────
+// AStages: Register Mod Recipe Restrictions
+// ────────────────────────────────────────────────
+
+Object.entries(global.modLocks).forEach(([modId, stage]) => {
+    const id = `astages/recipe/${modId}`;
+    AStages.addRestrictionForModRecipe(id, stage, modId);
+});
+// ────────────────────────────────────────────────
 // AStages: Register Item Restrictions
 // ────────────────────────────────────────────────
 
@@ -67,16 +75,16 @@ for (var i = 0; i < global.itemLocks.length; i++) {
     var restrictionId = "astages/item_" + entry.id.replace(":", "_");
 
     AStages.addRestrictionForItem(restrictionId, entry.stage, entry.id)
-        .setCanBeDig(false)
-        .setCanBeStoredInInventory(false)
+        .setCanPickedUp(true)
+        .setCanBeStoredInInventory(true)
         .setCanBeEquipped(false)
         .setCanBePlaced(false)
-        .setCanPickedUp(false)
+        .setCanBeDig(false)
         .setHideTooltip(true)
+        .setRenderItemName(false)
         .setCanItemBeLeftClicked(false)
         .setCanItemBeRightClicked(false)
-        .setHideInJEI(true)
-        .setRenderItemName(false);
+        .setHideInJEI(true);
 }
 
 // ────────────────────────────────────────────────
