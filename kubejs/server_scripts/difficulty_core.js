@@ -1,4 +1,4 @@
-// Script by Raziphel
+// Script by Raziphel 🐉
 // Join our Discord - discord.gg/razi
 // If you would like to join the development team!
 
@@ -33,30 +33,41 @@ global.stageColors = {
 global.capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 // ────────────────────────────────────────────────
-// Difficulty Sync on Tick
+// Mob Difficulty Scaling via AStages Integration
+// Works with Majrusz Difficulty gamestates
 // ────────────────────────────────────────────────
 
 PlayerEvents.tick(event => {
     const player = event.player;
     if (player.age % 200 !== 0) return; // Every 10 seconds
 
-    for (let i = global.difficultyStages.length - 1; i >= 0; i--) {
-        const stage = global.difficultyStages[i];
-        if (player.stages.has(stage)) {
+    let targetStage = 'normal';
 
-            if (player.persistentData.majruszStage !== stage) {
-                player.runCommandSilent(`difficulty set ${stage}`);
-                player.persistentData.majruszStage = stage;
+    if (
+        AStages.playerHasStage('brutal', player) ||
+        AStages.playerHasStage('nightmare', player) ||
+        AStages.playerHasStage('torment', player) ||
+        AStages.playerHasStage('oblivion', player)
+    ) {
+        targetStage = 'master';
+    } else if (
+        AStages.playerHasStage('normal', player) ||
+        AStages.playerHasStage('hard', player)
+    ) {
+        targetStage = 'expert';
+    }
 
-                // Fancy stage message
-                const color = global.stageColors[stage] || '§7';
-                const name = global.capitalize(stage);
-                player.tell(`§6[⏫] Difficulty increased to ${color}§l${name}§r§6!`);
-                player.runCommandSilent("playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1");
-                console.log(`[💀] Set ${player.name} to difficulty '${stage}'`);
-            }
+    if (player.persistentData.majruszStage !== targetStage) {
+        player.persistentData.majruszStage = targetStage;
 
-            break;
-        }
+        const command = `gamestate ${targetStage} ${player.name}`;
+        player.runCommandSilent(command);
+
+        const color = (global.stageColors && global.stageColors[targetStage]) || '§7';
+        const name = global.capitalize ? global.capitalize(targetStage) : targetStage;
+        player.tell(`§6[⏫] Mob Difficulty increased to ${color}§l${name}§r§6!`);
+        player.runCommandSilent("playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1");
+
+        console.log(`[💀] Set ${player.name} to gamestate '${targetStage}'`);
     }
 });

@@ -2,12 +2,12 @@
 #FollowVoice Config
 #Defines how mobs react to player voices, including their movement speed, detection range, and reaction threshold.
 [mob_voice_configs]
-	mob_configs = ["minecraft:zombie=speed=1.5,range=20,threshold=-40.0", "minecraft:skeleton=speed=1.2,range=15,threshold=-35.0", "quiet_place:death_angel=speed=1.9,range=45,threshold=-28.0"]
+	mob_configs = ["minecraft:zombie=speed=1.0,range=20,threshold=-40.0", "minecraft:skeleton=speed=1.0,range=15,threshold=-35.0", "quiet_place:death_angel=speed=1.9,range=45,threshold=-28.0"]
 
 #RunawayVoiceGoal Config
 #Defines how animals react to player voices, including their fleeing speed, detection range, and reaction threshold.
 [animal_voice_configs]
-	animal_configs = ["minecraft:cow=speed=1.5,range=15,threshold=-45.0", "minecraft:pig=speed=1.2,range=5,threshold=-45.0"]
+	animal_configs = ["minecraft:cow=speed=1.0,range=15,threshold=-45.0", "minecraft:pig=speed=1.2,range=5,threshold=-45.0"]
 
 #Whisper Config
 #Multipliers that affect the detection range and movement speed when the player is whispering.

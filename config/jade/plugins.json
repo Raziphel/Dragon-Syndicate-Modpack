@@ -61,6 +61,9 @@
     "traditional_age": true,
     "nightstag": true
   },
+  "kubejs": {
+    "numerical_mana": true
+  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -79,9 +82,6 @@
   },
   "immersiveengineering": {
     "multiblock_icon": true
-  },
-  "createsifter": {
-    "sifter_data": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -103,10 +103,6 @@
   "balm": {
     "jade": true
   },
-  "tesseract": {
-    "tesseract": true,
-    "remove_default": true
-  },
   "cslcrops": {
     "temp_data": true
   },
@@ -120,6 +116,9 @@
     "hud.rgb16": true,
     "hud": true,
     "hud.redstone": true
+  },
+  "autoleveling": {
+    "level": true
   },
   "delightful": {
     "crop_progress": true,
@@ -137,6 +136,9 @@
   },
   "astages": {
     "block_component_provider": true
+  },
+  "corpse": {
+    "corpse": true
   },
   "cookingforblockheads": {
     "fridge": true,

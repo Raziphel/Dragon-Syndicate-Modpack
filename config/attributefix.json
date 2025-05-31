@@ -539,6 +539,17 @@
         "value": 2
       }
     },
+    "autoleveling:monster.projectile_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "irons_spellbooks:max_mana": {
       "enabled": false,
       "min": {
@@ -1120,6 +1131,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "autoleveling:monster.explosion_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "minecraft:generic.movement_speed": {

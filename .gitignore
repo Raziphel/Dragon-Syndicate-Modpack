@@ -8,7 +8,6 @@ _*
 *.jar
 /.mixin.out
 /crash-reports
-/data
 /datapacks
 /downloads
 /fancymenu_data
