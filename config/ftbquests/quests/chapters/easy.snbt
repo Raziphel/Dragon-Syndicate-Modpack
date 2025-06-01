@@ -1,9 +1,10 @@
 {
+	autofocus_id: "35E301B61A85F25B"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "easy"
 	group: "0E2729CE3DC6BA1D"
-	icon: "minecraft:dirt"
+	icon: "midnight:rift_placer"
 	id: "17CAE699A0F41914"
 	order_index: 1
 	quest_links: [ ]
@@ -267,6 +268,27 @@
 			}]
 			x: 3.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"17C773C24E773B76"
+				"5FC76236A5A16E2F"
+				"52ABD440C713EB01"
+				"3F7F8836E4327063"
+				"2D98A57D929AC81A"
+				"626B62C87A1B9F98"
+			]
+			icon: "midnight:rift_placer"
+			id: "47FFB76C65C2B80A"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "midnight:the_midnight"
+				id: "6EF8E68328020074"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 3.75d
 		}
 	]
 	title: "&aEasy"

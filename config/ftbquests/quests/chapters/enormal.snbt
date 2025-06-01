@@ -1,0 +1,41 @@
+{
+	autofocus_id: "164FF40122F3B3E6"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "enormal"
+	group: "0E2729CE3DC6BA1D"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "6F0814DA08B82B6E"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"By checking this quest you will enter normal difficulty!"
+			""
+			"This can not be un-done and will make the game harder!"
+		]
+		icon: "minecraft:stone"
+		id: "164FF40122F3B3E6"
+		rewards: [{
+			auto: "disabled"
+			command: "/astages add @p normal"
+			elevate_perms: true
+			exclude_from_claim_all: true
+			id: "1CCD8C9AF31E7ADC"
+			title: "Enter Normal Difficulty"
+			type: "command"
+		}]
+		shape: "circle"
+		size: 2.0d
+		subtitle: "&c[Warning]"
+		tasks: [{
+			id: "2AD8E19E216AFE1C"
+			title: "&aEasy Difficulty"
+			type: "checkmark"
+		}]
+		title: "&eNormal Difficulty"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&eNormal"
+}

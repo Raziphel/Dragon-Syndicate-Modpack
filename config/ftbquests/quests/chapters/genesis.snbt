@@ -508,7 +508,7 @@
 		}
 		{
 			dependencies: ["2E79BABFC6CBD7F6"]
-			icon: "minecraft:dirt"
+			icon: "midnight:rift_placer"
 			id: "6A1B140001AF5DE2"
 			size: 2.0d
 			tasks: [{
