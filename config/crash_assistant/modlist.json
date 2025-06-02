@@ -27,6 +27,14 @@
     "modId": "akashictome",
     "version": "1.7-27"
   },
+  "alexscaves-2.0.2.jar": {
+    "modId": "alexscaves",
+    "version": "2.0.2"
+  },
+  "alexscavesdelight-1.0.27-final.jar": {
+    "modId": "alexscavesdelight",
+    "version": "1.0.27-final"
+  },
   "alexsdelight-1.5.jar": {
     "modId": "alexsdelight",
     "version": "1.5"
@@ -219,6 +227,10 @@
     "modId": "bwncr",
     "version": "3.17.2"
   },
+  "caelus-forge-3.2.0+1.20.1.jar": {
+    "modId": "caelus",
+    "version": "3.2.0+1.20.1"
+  },
   "cameraoverhaul-1.1-1.20.4.jar": {
     "modId": "cameraoverhaul",
     "version": "1.0.0"
@@ -350,6 +362,10 @@
   "create_enchantment_industry-1.3.2-for-create-6.0.4.jar": {
     "modId": "create_enchantment_industry",
     "version": "1.3.2-for-create-6.0.4"
+  },
+  "create_ironworks-3.5.0-forge-1.20.1.jar": {
+    "modId": "create_ironworks",
+    "version": "3.5.0"
   },
   "create_recycle_1.0.2_forge_1.20.1.jar": {
     "modId": "create_crush_everything",
@@ -768,6 +784,10 @@
     "modId": "invtweaks",
     "version": "1.2.0"
   },
+  "irons_spellbooks-1.20.1-3.4.0.9.jar": {
+    "modId": "irons_spellbooks",
+    "version": "1.20.1-3.4.0.9"
+  },
   "ItemProductionLib-1.20.1-1.0.2a-all.jar": {
     "modId": "itemproductionlib",
     "version": "1.0.2a"
@@ -1121,9 +1141,9 @@
     "modId": "biomeswevegone",
     "version": "1.5.11"
   },
-  "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.3.9.jar": {
+  "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.3.11.jar": {
     "modId": "ohthetreesyoullgrow",
-    "version": "1.3.9"
+    "version": "1.3.11"
   },
   "out_of_sight-1.20.1-1.0.3.jar": {
     "modId": "out_of_sight",
@@ -1141,9 +1161,9 @@
     "modId": "particle_core",
     "version": "0.2.6+1.20.1+forge"
   },
-  "particular-1.20.1-Forge-1.2.3.jar": {
+  "particular-1.20.1-Forge-1.2.4.jar": {
     "modId": "particular",
-    "version": "1.2.3"
+    "version": "1.2.4"
   },
   "PassiveSkillTree-1.20.1-BETA-0.6.14a-all.jar": {
     "modId": "skilltree",
@@ -1161,7 +1181,7 @@
     "modId": "pehkui",
     "version": "3.8.2+1.20.1-forge"
   },
-  "PhilipsRuins1.20.1-5.3.jar": {
+  "Philips-Ruins1.20.1-5.4.jar": {
     "modId": "philipsruins",
     "version": "5.3"
   },
@@ -1501,6 +1521,10 @@
     "modId": "travelerstitles",
     "version": "1.20-Forge-4.0.2"
   },
+  "traveloptics-4.4.0-1.20.1.jar": {
+    "modId": "traveloptics",
+    "version": "4.4.0-1.20.1"
+  },
   "twilightaether-1.20.1-1.0.0.jar": {
     "modId": "twilightaether",
     "version": "1.20.1-1.0.0"
@@ -1521,7 +1545,7 @@
     "modId": "txnilib",
     "version": "1.0.24"
   },
-  "underground_rooms-1.9.4.jar": {
+  "underground_rooms-1.9.5.jar": {
     "modId": "underground_rooms",
     "version": "1.0-SNAPSHOT"
   },

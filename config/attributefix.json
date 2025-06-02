@@ -220,17 +220,6 @@
         "value": 1024
       }
     },
-    "stardew_fishing:bar_size": {
-      "enabled": false,
-      "min": {
-        "default": 4,
-        "value": 4
-      },
-      "max": {
-        "default": 142,
-        "value": 142
-      }
-    },
     "irons_spellbooks:cast_time_reduction": {
       "enabled": false,
       "min": {
@@ -240,6 +229,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "stardew_fishing:bar_size": {
+      "enabled": false,
+      "min": {
+        "default": 4,
+        "value": 4
+      },
+      "max": {
+        "default": 142,
+        "value": 142
       }
     },
     "minecraft:zombie.spawn_reinforcements": {
@@ -396,17 +396,6 @@
         "value": 1024
       }
     },
-    "divine_weaponry:erebus_wither_direction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2,
-        "value": 2
-      }
-    },
     "irons_spellbooks:lightning_spell_power": {
       "enabled": false,
       "min": {
@@ -416,6 +405,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "divine_weaponry:erebus_wither_direction": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
       }
     },
     "attributeslib:mining_speed": {
@@ -539,17 +539,6 @@
         "value": 2
       }
     },
-    "autoleveling:monster.projectile_damage_bonus": {
-      "enabled": false,
-      "min": {
-        "default": 1,
-        "value": 1
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
-      }
-    },
     "irons_spellbooks:max_mana": {
       "enabled": false,
       "min": {
@@ -559,6 +548,17 @@
       "max": {
         "default": 1000000,
         "value": 1000000
+      }
+    },
+    "autoleveling:monster.projectile_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "minecraft:generic.knockback_resistance": {
@@ -957,6 +957,17 @@
         "value": 100
       }
     },
+    "traveloptics:aqua_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "irons_spellbooks:ender_spell_power": {
       "enabled": false,
       "min": {
@@ -1013,6 +1024,17 @@
       }
     },
     "irons_spellbooks:blood_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "traveloptics:aqua_magic_resist": {
       "enabled": false,
       "min": {
         "default": -100,

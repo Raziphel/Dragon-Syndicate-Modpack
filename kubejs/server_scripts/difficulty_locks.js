@@ -14,13 +14,14 @@ global.modLocks = {
     'overworld_netherite_ore': 'hard',
     'iceandfire': 'brutal',
     'iceandfire_curios': 'brutal',
+    'create': 'easy',
 };
 
 global.itemLocks = [
     { id: 'minecraft:diamond_ore', stage: 'normal' },
     { id: 'minecraft:deepslate_diamond_ore', stage: 'normal' },
-    { id: 'minecraft:obsidian', stage: 'hard' },
-    { id: 'minecraft:crying_obsidian', stage: 'hard' },
+    { id: 'minecraft:obsidian', stage: 'normal' },
+    { id: 'minecraft:crying_obsidian', stage: 'normal' },
     { id: 'minecraft:ancient_debris', stage: 'hard' },
     { id: 'minecraft:netherite_block', stage: 'hard' },
 ];

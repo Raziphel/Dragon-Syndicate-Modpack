@@ -7,8 +7,7 @@ _*
 .venv
 *.jar
 /.mixin.out
-/crash-reports
-/datapacks
+/crash-reports  
 /downloads
 /fancymenu_data
 /local
