@@ -5,7 +5,7 @@
 
 	[common.general]
 		#Show welcome message || Default: true
-		welcome_message = true
+		welcome_message = false
 
 	[common.augment]
 		#Chance to get a additional attribute in Wild Augment types || Default 0.2 = 20%
