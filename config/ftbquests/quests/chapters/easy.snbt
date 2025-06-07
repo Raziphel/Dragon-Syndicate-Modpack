@@ -161,7 +161,7 @@
 			id: "46BF7243CA852C70"
 			tasks: [{
 				id: "3223EEEE7BEFE9AF"
-				item: "cold_sweat:sewing_table"
+				item: "legendarysurvivaloverhaul:sewing_table"
 				type: "item"
 			}]
 			x: 2.5d
@@ -263,7 +263,7 @@
 			id: "56DA2088241F8689"
 			tasks: [{
 				id: "03A9C1C727525A27"
-				item: "cold_sweat:waterskin"
+				item: "legendarysurvivaloverhaul:canteen"
 				type: "item"
 			}]
 			x: 3.0d

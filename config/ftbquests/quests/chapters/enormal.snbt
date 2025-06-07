@@ -474,7 +474,7 @@
 				"430C880D8C72EACA"
 			]
 			hide_dependency_lines: true
-			icon: "minecraft:netherite_ingot"
+			icon: "minecraft:netherrack"
 			id: "1313E3D866947013"
 			size: 2.0d
 			tasks: [{

@@ -143,7 +143,7 @@
         "value": 100
       }
     },
-    "cold_sweat:heat_resistance": {
+    "stardew_fishing:line_strength": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -154,7 +154,7 @@
         "value": 1
       }
     },
-    "stardew_fishing:line_strength": {
+    "cold_sweat:heat_resistance": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -328,6 +328,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "legendarysurvivaloverhaul:cold_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "confluence:dodge_chance": {
@@ -506,6 +517,17 @@
         "value": 100
       }
     },
+    "legendarysurvivaloverhaul:permanent_heart": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "skilltree:stealth": {
       "enabled": false,
       "min": {
@@ -592,6 +614,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "legendarysurvivaloverhaul:thermal_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "attributeslib:overheal": {
@@ -935,6 +968,17 @@
         "value": 100
       }
     },
+    "legendarysurvivaloverhaul:heating_temperature": {
+      "enabled": false,
+      "min": {
+        "default": -10000,
+        "value": -10000
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "irons_spellbooks:fire_magic_resist": {
       "enabled": false,
       "min": {
@@ -1089,6 +1133,17 @@
         "value": 4
       }
     },
+    "legendarysurvivaloverhaul:broken_heart_resilience": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "divine_weaponry:erebus_flight": {
       "enabled": false,
       "min": {
@@ -1111,6 +1166,17 @@
         "value": 100
       }
     },
+    "legendarysurvivaloverhaul:heat_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "minecraft:generic.armor": {
       "enabled": true,
       "min": {
@@ -1120,6 +1186,17 @@
       "max": {
         "default": 30,
         "value": 1000000
+      }
+    },
+    "legendarysurvivaloverhaul:cooling_temperature": {
+      "enabled": false,
+      "min": {
+        "default": -10000,
+        "value": -10000
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "irons_spellbooks:blood_spell_power": {
@@ -1219,6 +1296,17 @@
       "max": {
         "default": 20,
         "value": 20
+      }
+    },
+    "legendarysurvivaloverhaul:broken_heart": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
       }
     },
     "attributeslib:arrow_damage": {
